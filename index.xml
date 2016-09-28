@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My New Hugo Site</title>
-    <link>http://tarapilbrow.github.io/</link>
+    <link>https://tarapilbrow.github.io/</link>
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 11 Sep 2016 17:29:40 +0100</lastBuildDate>
-    <atom:link href="http://tarapilbrow.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tarapilbrow.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>taraPilbrow</title>
-      <link>http://tarapilbrow.github.io/about/tarapilbrow/</link>
+      <link>https://tarapilbrow.github.io/about/tarapilbrow/</link>
       <pubDate>Sun, 11 Sep 2016 17:29:40 +0100</pubDate>
       
-      <guid>http://tarapilbrow.github.io/about/tarapilbrow/</guid>
+      <guid>https://tarapilbrow.github.io/about/tarapilbrow/</guid>
       <description>&lt;p&gt;Born in Hong Kong in 1979, Tara studied dance at Laban centre before going to Oxford to complete a degree in Chinese Studies. While in China for her degree course, Tara studied with some of Asia’s leading dance companies: Cloud Gate Dance Theatre, Taiwan; Beijing Modern Dance Company; and CCDC, Hong Kong. In Oxford, she started to work with Biserk Dance Company, with whom she continued to perform sporadically for five years.&lt;/p&gt;
 
 &lt;p&gt;On leaving Oxford Tara spent four months in New York studying at Dance Space Center and dancing for Choreographer Juliette Mapp. She then settled in Paris where she lived for ten years, working with a number of dance companies (including Cie Jacky Auvray, Cie Longuelouve, Prisme International, Cie Gilschamber, Cie Les Orpailleurs) as well as creating her own work.&lt;/p&gt;
@@ -25,10 +25,10 @@
     
     <item>
       <title>the company</title>
-      <link>http://tarapilbrow.github.io/about/company/</link>
+      <link>https://tarapilbrow.github.io/about/company/</link>
       <pubDate>Sun, 11 Sep 2016 07:00:59 +0100</pubDate>
       
-      <guid>http://tarapilbrow.github.io/about/company/</guid>
+      <guid>https://tarapilbrow.github.io/about/company/</guid>
       <description>&lt;p&gt;Tara Pilbrow Dance makes thoughtful and engaging dance theatre. We relate tales of daily life in a way that brings out their colour, contrast and emotional intensity. Our goal is to hang on to those fleeting moments of perfection and despair that are a part of every human experience.&lt;/p&gt;
 
 &lt;p&gt;Every piece brings together movement, music and text to create a unique and narrative. We aim to create work that is sophisticated and intelligent, while ensuring that it is accessible to the widest possible audience.&lt;/p&gt;
@@ -37,10 +37,10 @@
     
     <item>
       <title>2&#43;1</title>
-      <link>http://tarapilbrow.github.io/current/2&#43;1/</link>
+      <link>https://tarapilbrow.github.io/current/2&#43;1/</link>
       <pubDate>Sun, 11 Sep 2016 20:42:13 +0100</pubDate>
       
-      <guid>http://tarapilbrow.github.io/current/2&#43;1/</guid>
+      <guid>https://tarapilbrow.github.io/current/2&#43;1/</guid>
       <description>&lt;p&gt;Captivating audiences from 3 months to 91 years old, 2+1 is a wonderfully accessible dance theatre piece about the rollercoaster-ride of early parenthood. Becoming a parent is such a profound shift in our identity, lifestyle, routine and perception, a period of such intense highs and lows. Performers Amir Giles and Tara Pilbrow navigate the fatigue, confusion, and moments of complete hysteria hand in hand. At the back of the space a washing machine spews out an endless torrent of laundry, sometimes the couple fight back&amp;hellip;.. sometimes the washing machine wins.&lt;/p&gt;
 
 &lt;p&gt;&lt;span style=&#34;color:blue&#34;&gt;&amp;ldquo;A tongue in cheek, humourous look at parenthood&amp;rdquo;&lt;/span&gt; Marie McCluskey, Swindon Dance&lt;/p&gt;
@@ -53,7 +53,7 @@
 
 &lt;figure class=&#34;inlineFigure&#34;&gt;
     
-        &lt;img src=&#34;http://tarapilbrow.github.io/images/wptlogo.png&#34; /&gt;
+        &lt;img src=&#34;https://tarapilbrow.github.io/images/wptlogo.png&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -61,7 +61,7 @@
 
 &lt;figure class=&#34;inlineFigure&#34;&gt;
     
-        &lt;img src=&#34;http://tarapilbrow.github.io/images/dancewest_fb_b.jpg&#34; /&gt;
+        &lt;img src=&#34;https://tarapilbrow.github.io/images/dancewest_fb_b.jpg&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -69,7 +69,7 @@
 
 &lt;figure class=&#34;inlineFigure&#34;&gt;
     
-        &lt;img src=&#34;http://tarapilbrow.github.io/images/ststephens.png&#34; /&gt;
+        &lt;img src=&#34;https://tarapilbrow.github.io/images/ststephens.png&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -77,7 +77,7 @@
 
 &lt;figure class=&#34;inlineFigure&#34;&gt;
     
-        &lt;img src=&#34;http://tarapilbrow.github.io/images/SwindonBack.png&#34; /&gt;
+        &lt;img src=&#34;https://tarapilbrow.github.io/images/SwindonBack.png&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -85,7 +85,7 @@
 
 &lt;figure class=&#34;inlineFigure&#34;&gt;
     
-        &lt;img src=&#34;http://tarapilbrow.github.io/images/softfloor_logo.png&#34; /&gt;
+        &lt;img src=&#34;https://tarapilbrow.github.io/images/softfloor_logo.png&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -93,7 +93,7 @@
 
 &lt;figure class=&#34;inlineFigure&#34;&gt;
     
-        &lt;img src=&#34;http://tarapilbrow.github.io/images/High_res_tpc_logo.jpg&#34; /&gt;
+        &lt;img src=&#34;https://tarapilbrow.github.io/images/High_res_tpc_logo.jpg&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -101,7 +101,7 @@
 
 &lt;figure class=&#34;inlineFigure&#34;&gt;
     
-        &lt;img src=&#34;http://tarapilbrow.github.io/images/arts_council_logo.png&#34; /&gt;
+        &lt;img src=&#34;https://tarapilbrow.github.io/images/arts_council_logo.png&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -173,17 +173,17 @@ credits
     
     <item>
       <title>stretched</title>
-      <link>http://tarapilbrow.github.io/current/stretched/</link>
+      <link>https://tarapilbrow.github.io/current/stretched/</link>
       <pubDate>Sun, 11 Sep 2016 20:42:13 +0100</pubDate>
       
-      <guid>http://tarapilbrow.github.io/current/stretched/</guid>
+      <guid>https://tarapilbrow.github.io/current/stretched/</guid>
       <description>&lt;p&gt;Currently in the early stages of research and development, ‘Stretched to the Limit’, will be a 45-minute dance piece, and a set of short video interviews looking at clinical depression. Set on a bespoke platform upon which the dancer slowly builds and then is trapped within a giant elastic cat’s-cradle, the piece will explore the loneliness and despair that so many depressives suffer in silence. For most of my adult life my mother has suffered from severe depression and my goal is to make a piece of work which expresses something of her experience and of other close friends who have suffered.&lt;/p&gt;
 
 &lt;p&gt;SUPPORTED BY
 
 &lt;figure class=&#34;inlineFigure&#34;&gt;
     
-        &lt;img src=&#34;http://tarapilbrow.github.io/images/Current_STTL_PDSW_logo.png&#34; /&gt;
+        &lt;img src=&#34;https://tarapilbrow.github.io/images/Current_STTL_PDSW_logo.png&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -191,7 +191,7 @@ credits
 
 &lt;figure class=&#34;inlineFigure&#34;&gt;
     
-        &lt;img src=&#34;http://tarapilbrow.github.io/images/Current_STTL_Swindon_logo.png&#34; /&gt;
+        &lt;img src=&#34;https://tarapilbrow.github.io/images/Current_STTL_Swindon_logo.png&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -201,10 +201,10 @@ credits
     
     <item>
       <title>waltzing_words</title>
-      <link>http://tarapilbrow.github.io/past/waltzing_words/</link>
+      <link>https://tarapilbrow.github.io/past/waltzing_words/</link>
       <pubDate>Sun, 11 Sep 2016 20:42:13 +0100</pubDate>
       
-      <guid>http://tarapilbrow.github.io/past/waltzing_words/</guid>
+      <guid>https://tarapilbrow.github.io/past/waltzing_words/</guid>
       <description>&lt;p&gt;This solo multimedia work looks at how one person grows and develops within an urban environment. The dancer is cradled by a mass of voices, a barrage of words in which voices become sound rather than sense. At first she appears as a child playing in an adult world, self-absorbed, fascinated as much by her own body as the sounds and sights around her. Then gradually comes the discovery of the other, of sensuality, of her body as a means of communication.&lt;/p&gt;
 
 &lt;p&gt;The piece explores the irresistible pull of spirals, be it in the body, in graphic form or in the continuous flow of the waltz. The idea that in our spatial and social relations with our environment, our conscious decisions serve only to punctuate the flow of inevitable progress that carries us from one day to the next.&lt;/p&gt;
@@ -254,10 +254,10 @@ credits&lt;br /&gt;
     
     <item>
       <title>noli me tangere</title>
-      <link>http://tarapilbrow.github.io/past/nmt/</link>
+      <link>https://tarapilbrow.github.io/past/nmt/</link>
       <pubDate>Sun, 11 Sep 2016 20:42:13 +0100</pubDate>
       
-      <guid>http://tarapilbrow.github.io/past/nmt/</guid>
+      <guid>https://tarapilbrow.github.io/past/nmt/</guid>
       <description>&lt;p&gt;At the start of the century, confronted with the rising popularity of tango in Paris, the Parisian clergy beseeched Pope Pius to place a ban on the dance form. A pair of Tango dancers were summoned to the Vatican to defend their art-form.&lt;/p&gt;
 
 &lt;p&gt;This extraordinary rendez-vous at the Vatican provided the inspiration for Noli Me Tanguere. What might have passed through the minds of musician and dancer as they awaited their audience with his holiness. What did they feel was the essence of this controversial and yet universal art form&lt;/p&gt;
@@ -302,10 +302,10 @@ credits
     
     <item>
       <title>infanla</title>
-      <link>http://tarapilbrow.github.io/past/infanla/</link>
+      <link>https://tarapilbrow.github.io/past/infanla/</link>
       <pubDate>Sun, 11 Sep 2016 20:42:13 +0100</pubDate>
       
-      <guid>http://tarapilbrow.github.io/past/infanla/</guid>
+      <guid>https://tarapilbrow.github.io/past/infanla/</guid>
       <description>&lt;p&gt;This collaboration with Nigerian musician Sola Akingbola focuses on rhythm, the idea of two musicians and two dancers as a percussive and melodic ensemble. Both musicians and dancers work with short musical phrases, building, contrasting, and combining different rhythms, as each of the four artists contributes to the composition of the whole.&lt;/p&gt;
 
 &lt;p&gt;This work was commissioned by Transtango for the Dreaming Cities project.&lt;/p&gt;
@@ -350,10 +350,10 @@ credits
     
     <item>
       <title>entangled</title>
-      <link>http://tarapilbrow.github.io/past/entangled/</link>
+      <link>https://tarapilbrow.github.io/past/entangled/</link>
       <pubDate>Sun, 11 Sep 2016 20:42:13 +0100</pubDate>
       
-      <guid>http://tarapilbrow.github.io/past/entangled/</guid>
+      <guid>https://tarapilbrow.github.io/past/entangled/</guid>
       <description>&lt;p&gt;The piece tells the story of a young couple, from their chance encounter in a train station, through different stages of desire and dependence, as the two gradually become ‘Entangled.’&lt;/p&gt;
 
 &lt;p&gt;At the start of the creative process the goal was not so much to portray narrative, but to explore alternative ways of using tango as a theatrical form.  The vocabulary and form of Argentine Tango is conditioned by the constraints of a social dance context: the crowded dance floors, the conservative dress, the expectations inherent in a long tradition. Traditional stage tango circumvents these limitations by adding lifts, speed and drama. Entangled aims to adapt the intimacy and spontaneity of social dance forms to the stage, without resorting to acrobatics. The idea was simply to push existing movements into areas made possible by a contemporary dance training and mindset.&lt;/p&gt;
@@ -403,10 +403,10 @@ credits
     
     <item>
       <title>jukebox installation</title>
-      <link>http://tarapilbrow.github.io/past/jukebox/</link>
+      <link>https://tarapilbrow.github.io/past/jukebox/</link>
       <pubDate>Sun, 11 Sep 2016 20:42:13 +0100</pubDate>
       
-      <guid>http://tarapilbrow.github.io/past/jukebox/</guid>
+      <guid>https://tarapilbrow.github.io/past/jukebox/</guid>
       <description>&lt;p&gt;The Jukebox Installation is a deliberate reference to modern pop culture&amp;hellip; for once, art complies to the norms of the market; this is entertainment on demand, with the artist assuming his role as service provider!&lt;/p&gt;
 
 &lt;p&gt;The work looks at how the human body, and more specifically, the dancing body, can provide a balance point for the friction and flux of the digital world.&lt;/p&gt;
@@ -457,10 +457,10 @@ credits&lt;br /&gt;
     
     <item>
       <title>for you, dad</title>
-      <link>http://tarapilbrow.github.io/past/fyd/</link>
+      <link>https://tarapilbrow.github.io/past/fyd/</link>
       <pubDate>Sun, 11 Sep 2016 20:42:13 +0100</pubDate>
       
-      <guid>http://tarapilbrow.github.io/past/fyd/</guid>
+      <guid>https://tarapilbrow.github.io/past/fyd/</guid>
       <description>&lt;p&gt;Inspired by my fathers complete incomprehension of my dance (of most dance for that matter), ‘For you Dad’ explores the essence of what dance means to me. A combination of both choreographed and improvised movement, I allowed myself to create instinctively, to feel, to savour and to accept.&lt;/p&gt;
 
 &lt;p&gt;&lt;span style=&#34;font-family:&#39;Tara&#39;&#34;&gt;
@@ -501,10 +501,10 @@ credits&lt;br /&gt;
     
     <item>
       <title>l&#39;histoire coule de source</title>
-      <link>http://tarapilbrow.github.io/dancefilm/hcds/</link>
+      <link>https://tarapilbrow.github.io/dancefilm/hcds/</link>
       <pubDate>Sun, 11 Sep 2016 20:42:13 +0100</pubDate>
       
-      <guid>http://tarapilbrow.github.io/dancefilm/hcds/</guid>
+      <guid>https://tarapilbrow.github.io/dancefilm/hcds/</guid>
       <description>&lt;p&gt;Filmed on site in a medieval chateau in Western France, the film gives us a glimpse into the lives of three of the chateau’s former residents.
 The &amp;ldquo;I&amp;rdquo; of the camera walks into the chateau and enters an underground chamber where the waters of an art installation (Koki Watanabe’s &amp;ldquo;Possession Ovale&amp;rdquo;) drip from patterned spheres into earthen bowls on the floor below. Within this endless cycle of water he begins to perceive figures: the ghostly forms of three female bodies. He catches flashes of their past, of the wealth of events and peoples whose history is engrained in the thick stone walls of the castle.&lt;/p&gt;
 
@@ -551,10 +551,10 @@ credits&lt;br /&gt;
     
     <item>
       <title>support us</title>
-      <link>http://tarapilbrow.github.io/supportus/supportus/</link>
+      <link>https://tarapilbrow.github.io/supportus/supportus/</link>
       <pubDate>Sun, 11 Sep 2016 20:42:13 +0100</pubDate>
       
-      <guid>http://tarapilbrow.github.io/supportus/supportus/</guid>
+      <guid>https://tarapilbrow.github.io/supportus/supportus/</guid>
       <description>&lt;p&gt;Tara Pilbrow Dance, like most arts organisations, is constantly striving to secure funding in order to reach audiences, engage communities and create new work.&lt;/p&gt;
 
 &lt;p&gt;We would welcome the opportunity to meet individuals and organisations that are interested in exploring ways to support the work of Tara Pilbrow Dance. We greatly appreciate donations at any level, for example:&lt;/p&gt;
@@ -567,10 +567,10 @@ A £1000 donation would enable us to spend one week in studio researching new wo
     
     <item>
       <title>tango</title>
-      <link>http://tarapilbrow.github.io/tango/tango/</link>
+      <link>https://tarapilbrow.github.io/tango/tango/</link>
       <pubDate>Sun, 11 Sep 2016 20:42:13 +0100</pubDate>
       
-      <guid>http://tarapilbrow.github.io/tango/tango/</guid>
+      <guid>https://tarapilbrow.github.io/tango/tango/</guid>
       <description>&lt;p&gt;Having trained and worked as a contemporary dancer for a number of years, the last thing Tara expected was to find herself swept up in the exotic, passionate world of Argentine Tango. She took her first steps in Paris under the tutelage of Carlos Schott and Rosa Forte-Berg, and a year later she travelled to Buenos Aires keen to learn, and to understand more about the history and culture behind the form.&lt;/p&gt;
 
 &lt;p&gt;In Buenos Aires Tara studied with many great maestros including Pablo Villaraza and Dana Frigoli, Gustavo Naveira, Mariano ‘Chicho’ Frumboli and Julio Balmaceda and Corina de la Rosa.&lt;/p&gt;
