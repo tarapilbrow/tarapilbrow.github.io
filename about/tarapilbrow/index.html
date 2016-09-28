@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>taraPilbrow</title>
+
+    
+    <link href="http://tarapilbrow.github.io/css/bootstrap-theme.css" rel="stylesheet">
+
+
+    <link href='http://fonts.googleapis.com/css?family=Arbutus+Slab&family=Cabin:600&family=Source+Code+Pro' rel='stylesheet' type='text/css'>    
+    
+    
+    <link href="http://tarapilbrow.github.io/css/HPstyles.css" rel="stylesheet">
+    
+    <link href="http://tarapilbrow.github.io/css/owl.carousel.css" rel="stylesheet">
+    <link href="http://tarapilbrow.github.io/css/owl.theme.default.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <style amp-custom>
+
+a {
+    color:black;
+}
+
+
+.btn {    
+     
+     
+    width:60px;
+    height: 60px;
+    font-size: 3em;
+    color: red;
+    font-weight: bold;
+
+
+}
+
+.btn:visited {
+    color:red;
+}
+
+.floatLeft {
+    position: absolute;
+    float: left;
+    display: inline;    
+    z-index: 9999999;
+    left: 0;
+    top: 185px;
+}
+
+.floatRight {
+    position: absolute;
+    float: right;
+    display: inline;    
+    z-index: 9999999;
+    right: 0;
+    top: 185px;
+}
+@font-face {
+    font-family: 'tara';
+    src:url('/fonts/oratorstd-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Minion-Pro-Regular';
+    src:url('/fonts/Minion-Pro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "tara" !important;
+    line-height: 1;
+}
+
+.socialbar {
+    position: relative;
+}
+
+.socialbar ul {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+}
+
+.socialbar ul li {
+    float: left;
+}
+
+.socialbar ul li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 0px 5px;
+    text-decoration: none;
+}
+
+.top-nav-collapse {
+  background-color: rgba(255, 255, 255, 255) !important;
+  border-color: rgba(231, 231, 231, 0) !important;
+  color: rgb(255, 255, 255) !important ;
+  z-index: 1030;
+  margin-bottom: 0;
+}
+
+.mainImg {
+    background: url(images/Page-1-image.png) no-repeat center fixed;
+    z-index: 1020;
+}
+
+.navbar-fixed-top {
+    z-index:999999;
+}
+
+.icon-facebook {
+    background: url(images/Facebook_F_icon.png) no-repeat center fixed;
+    background-size: 8px 8px;
+}
+
+.home, .header, .content {
+    background-color: black;
+}
+ul.sidebar-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+     
+    color: #333;
+    font-size: 1.5em;
+}
+
+ul.sidebar-menu li {
+    float: left;
+    padding: 0 30px;
+}
+
+
+.blacktext a {
+    color:black;
+}
+
+.whitetext a {
+    color: white;
+}
+
+
+ul.sidebar-menu li a {
+    display: inline-block;    
+    text-align: center;
+    padding: 5px 16px;
+    text-decoration: none;
+}
+
+ul.sidebar-menu li a:hover, ul.sidebar-menu .dropdown:hover .dropbtn {
+     
+    color:red;
+}
+
+ul.sidebar-menu .dropdown {
+    display: inline-block;
+}
+
+ul.sidebar-menu .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 250px;
+     
+}
+
+.mainContainer ul.sidebar-menu .dropdown-content a {
+    color:black;
+}
+
+ul.sidebar-menu .dropdown-content a {    
+    padding: 0;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 0.8em;
+}
+
+ul.sidebar-menu .dropdown-content a:hover {background-color: transparent; color:red;}
+
+ul.sidebar-menu .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+ul.sidebar-menu .dropdown-content .image {
+    width: 44px;
+    height: 72px;
+}
+
+ul.sidebar-menu .dropdown-content span {
+    height: 72px;
+    vertical-align: top;
+    display: block;
+    float: left;
+    padding: 0;
+}
+
+.vert-text {
+    vertical-align: bottom;
+    text-align: right;
+    padding-right: 100px;
+    float:right;
+}
+
+.vert-text img {
+    width: 150px;
+}
+
+.taraLogoText {
+    font-size: 3em;
+}
+
+#footer {
+    padding: 10px 0 25px 0;
+}
+
+.point {
+    padding: 0;
+}
+
+.homeCollout {
+    height: initial;
+    padding: 0;
+}
+
+.mainContent {
+    background-color: white;
+    min-height: 50%;
+    padding-top: 60px;
+}
+
+.maintxt {
+    font-style: italic;
+    font-size: 1.6em; 
+    padding-top: 50px;
+}
+
+.imgtxtleft {
+    float: left;
+}
+
+.mainimg img{
+    display: block;
+    margin: auto;
+    max-height:450px;
+    width: auto;
+    height: auto;
+}
+
+.maincontent p {
+    font-size: 1.3em;
+    font-family: "Minion-Pro-Regular", Arial;
+    padding-top: 20px;
+}
+
+.mainContent .sidebar-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+.mainContent .sidebar-nav ul li{
+    padding: 5px 0; 
+}
+
+.mainContent .sidebar-nav ul li a{
+    
+}
+
+.mainContent table th, .mainContent table td{
+    font-size: 1.3em;
+    font-weight: normal;
+    
+}
+
+.mainContent table th:nth-child(2), .mainContent table td:nth-child(2){
+    padding-left: 80px;
+}
+
+
+.inlineFigure {
+    display:inline-block;
+}
+
+.blog__tab img {
+    max-width: 400px;
+    padding-bottom: 10px;
+}
+
+.owl-carousel .owl-item img {
+    display: block;
+    max-height:450px;
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+.active{
+    color:red;
+}
+
+.sidebarImg {
+    display: block;
+    float: left;
+    position: relative;
+}
+
+.mainContent a {
+    color: #428bca;
+}
+
+.logotext {
+    display: inline-block;
+    vertical-align: bottom;
+    padding-bottom: 60px;
+    color: red;
+    font-size: 1.2em;
+}
+</style>
+
+
+
+  </head>
+
+  <body>
+
+<nav class="navbar navbar-default top-nav-collapse" role="navigation" id="navbarglobal">
+
+
+      <div class="socialbar container">
+        <ul>
+              
+              
+                <li><a href="https://twitter.com/tarapilbrowTwitter" class=""><img src="/images/twitterIcon.jpg"/></a></li>
+              
+              
+                <li><a href="https://facebook.com/tarapilbrowFacebook" class=""><img src="/images/facebookIcon.png"/></a></li>
+              
+              
+              
+        </ul>
+      </div>
+    
+     
+<aside>
+    <div id="sidebar" class="nav-collapse">
+        
+                
+        <ul class="sidebar-menu">        
+          
+            <li class="dropdown sub-menu">
+            <a href="/" class="dropbtn">
+                <span>home</span>
+                <span class="menu-arrow arrow_carrot-right"></span>
+            </a>
+            </li>
+          
+          
+           
+              
+
+            <li class="dropdown sub-menu">
+            <a href="javascript:;" class="dropbtn active">
+                <span>about</span>
+                <span class="menu-arrow arrow_carrot-right"></span>
+            </a>
+            <div class="dropdown-content  ">
+                <span><div class="image" style="background-image: url(http://tarapilbrow.github.io/images/mini_about_black.png); background-repeat: no-repeat;"></div></span><span>
+                
+                <a  href="/about/company/"> the company </a>
+                
+                <a class="active" href="/about/tarapilbrow/"> tara pilbrow </a>
+                
+                </span>
+            </div>
+          
+          </li>
+           
+              
+
+            <li class="dropdown sub-menu">
+            <a href="javascript:;" class="dropbtn">
+                <span>productions</span>
+                <span class="menu-arrow arrow_carrot-right"></span>
+            </a>
+            <div class="dropdown-content  ">
+                <span><div class="image" style="background-image: url(http://tarapilbrow.github.io/images/mini_productions_black.png); background-repeat: no-repeat;"></div></span><span>
+                
+                <a  href="/current/"> current </a>
+                
+                <a  href="/past/"> past </a>
+                
+                <a  href="/dancefilm/hcds/"> dance film </a>
+                
+                </span>
+            </div>
+          
+          </li>
+           
+              
+            <li>
+            <a class="" href="/tango/tango/" >
+                <span>tango</span>
+            </a>
+          
+          </li>
+           
+              
+            <li>
+            <a class="" href="http://tarapilbrow.blogspot.co.uk/"  target="_blank" >
+                <span>news</span>
+            </a>
+          
+          </li>
+           
+              
+            <li>
+            <a class="" href="/supportus/supportus" >
+                <span>support us</span>
+            </a>
+          
+          </li>
+          
+        </ul>
+        
+    </div>
+</aside>
+
+</nav>
+
+<div class="mainContent">
+	<div class="container">		
+		<div class="row">		
+		
+		
+			<div class="col-md-6">
+			
+				<div class="row">
+				
+
+ 
+
+      
+    <nav class="sidebar-nav">    
+      <div class="row">
+        <div class="sidebarImg">
+          <img src="/images/mini_about_black.png">
+        </div>
+        <div class="col-sm-9 col-xs-9 col-md-9">
+          <ul>
+          
+            <li><a class="" href="/about/company/">the company </a>
+            
+            </li>
+          
+            <li><a class=" active" href="/about/tarapilbrow/">tara pilbrow </a>
+            
+            </li>
+          
+          </ul>
+        </div>
+      </div>            
+    </nav>
+  
+ 
+
+  
+ 
+
+  
+ 
+
+  
+ 
+
+  
+
+				</div>				
+				
+				<div class="row">
+					<div class="col-md-10 col-md-offset-2">
+						<p class="maintxt">&#34;The body has always been a source of fascination for me, the experience of it as a sensory mechanism, the joy of understanding it, the challenge of mastering and analysing movement.  The principal goal of my art is to share this fascination with others, through performance and teaching, but also through video, image and text.&#34;</p>
+					</div>
+				</div>
+				
+				
+			</div>	
+			
+		
+			<div class="mainimg col-md-4">
+				<img src="http://tarapilbrow.github.io/images/about_tara.png">
+			
+			</div>
+		
+		
+		</div>
+		<div class="row">
+			<div class="maincontent col-md-10 col-md-offset-1">
+				<p>Born in Hong Kong in 1979, Tara studied dance at Laban centre before going to Oxford to complete a degree in Chinese Studies. While in China for her degree course, Tara studied with some of Asia’s leading dance companies: Cloud Gate Dance Theatre, Taiwan; Beijing Modern Dance Company; and CCDC, Hong Kong. In Oxford, she started to work with Biserk Dance Company, with whom she continued to perform sporadically for five years.</p>
+
+<p>On leaving Oxford Tara spent four months in New York studying at Dance Space Center and dancing for Choreographer Juliette Mapp. She then settled in Paris where she lived for ten years, working with a number of dance companies (including Cie Jacky Auvray, Cie Longuelouve, Prisme International, Cie Gilschamber, Cie Les Orpailleurs) as well as creating her own work.</p>
+
+<p>She founded Tara Pilbrow Dance on her return to the UK in 2011 and created Entangled, Infanla, Waltzing Words and most recently 2+1. R&amp;D for next project Stretched to the Limit starts in November 2016.</p>
+	
+			</div>
+		</div>
+	</div>
+</div>
+    <div class="">
+      <div class="vert-text">
+        <div class="logotext">contact@tarapilbrow.com</div>
+        <img src="http://tarapilbrow.github.io/images/TPlogo.png" class="logo">        
+      </div>
+    </div>
+
+
+
+<script src="http://tarapilbrow.github.io/js/jquery-2.1.1.min.js"></script>
+<script src="http://tarapilbrow.github.io/js/owl.carousel.min.js"></script>
+
+<script>
+$(function() {
+$('a[href*=#]:not([href=#])').click(function() {
+  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+      || location.hostname == this.hostname) {
+
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    if (target.length) {
+      $('html,body').animate({
+        scrollTop: target.offset().top
+      }, 1000);
+      return false;
+    }
+  }
+});
+});
+
+var owl = $('.owl-carousel').owlCarousel({
+loop:true,
+margin:10,
+nav:false,
+autoplay:true,
+autoplayHoverPause:false,
+autoplayTimeout:4000,
+autoHeight:false,
+itemsScaleUp:false,
+responsive:{
+    0:{
+        items:1
+    },
+    0:{
+        items:1
+    },
+}
+});
+
+
+    $(".owl-carousel-arrows .next").click(function() {
+        owl.trigger('next.owl.carousel');
+    });
+  
+    $(".owl-carousel-arrows .prev").click(function() {
+        owl.trigger('prev.owl.carousel');
+    });
+
+</script>
+
+
+</body>
+
+</html>
