@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
+    <title>Tara Pilbrow</title>
     <link>https://tarapilbrow.github.io/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <description>Recent content on Tara Pilbrow</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 11 Sep 2016 17:29:40 +0100</lastBuildDate>
@@ -32,6 +32,18 @@
       <description>&lt;p&gt;Tara Pilbrow Dance makes thoughtful and engaging dance theatre. We relate tales of daily life in a way that brings out their colour, contrast and emotional intensity. Our goal is to hang on to those fleeting moments of perfection and despair that are a part of every human experience.&lt;/p&gt;
 
 &lt;p&gt;Every piece brings together movement, music and text to create a unique and narrative. We aim to create work that is sophisticated and intelligent, while ensuring that it is accessible to the widest possible audience.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>catch 2 &#43; 1 at Swindom Dance (21st Oct) and Pavilion Dance Southwest (13th Nov)</title>
+      <link>https://tarapilbrow.github.io/homenewspost/booknow/</link>
+      <pubDate>Tue, 06 Sep 2016 23:01:14 +0100</pubDate>
+      
+      <guid>https://tarapilbrow.github.io/homenewspost/booknow/</guid>
+      <description>&lt;p&gt;Book tickets at&lt;br /&gt;
+&lt;a href=&#34;https://tickets.tarapilbrow.com&#34; target=&#34;_blank&#34;&gt;Swindowm&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://tickets.tarapilbrow.com&#34; target=&#34;_blank&#34;&gt;Bournemouth&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
