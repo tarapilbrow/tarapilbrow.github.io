@@ -2,6 +2,15 @@
 <html>
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9M07KTMJ6S"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-9M07KTMJ6S');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
@@ -20,29 +29,29 @@
     <script>
         // Burger menus
         document.addEventListener('DOMContentLoaded', function () {
-          // open
-          const burger = document.querySelectorAll('.tham');
-          const menu = document.querySelectorAll('.navbar-menu');
-          const overlay = document.querySelectorAll('.overlay');
-          const closeMenu = function () {
-            for (var j = 0; j < menu.length; j++) {
-              menu[j].classList.toggle('invisible');
+            // open
+            const burger = document.querySelectorAll('.tham');
+            const menu = document.querySelectorAll('.navbar-menu');
+            const overlay = document.querySelectorAll('.overlay');
+            const closeMenu = function () {
+                for (var j = 0; j < menu.length; j++) {
+                    menu[j].classList.toggle('invisible');
+                }
+            };
+
+            if (burger.length && menu.length) {
+                for (var i = 0; i < burger.length; i++) {
+                    burger[i].addEventListener('click', closeMenu);
+                }
             }
-          };
-    
-          if (burger.length && menu.length) {
-            for (var i = 0; i < burger.length; i++) {
-              burger[i].addEventListener('click', closeMenu);
+
+            if (overlay.length) {
+                for (var i = 0; i < overlay.length; i++) {
+                    overlay[i].addEventListener('click', closeMenu);
+                }
             }
-          }
-    
-          if (overlay.length) {
-            for (var i = 0; i < overlay.length; i++) {
-              overlay[i].addEventListener('click', closeMenu);
-            }
-          }
         });
-      </script>
+    </script>
     <div>
         <nav class="sticky top-0 z-30 bg-opacity-80 bg-white">
             <div class="relative flex justify-between">
@@ -62,12 +71,20 @@
             </div>
             <div class="absolute z-50 top-0 right-0 w-80 h-screen bg-white text-black p-4 pt-8">
                 <ul class="border-r border-slate-200 text-slate-900">
-                    <li class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline"><a href="about.html">About</a></li>
-                    <li class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline"><a href="projects.html">Projects</a>
+                    <li
+                        class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline">
+                        <a href="about.html">About</a></li>
+                    <li
+                        class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline">
+                        <a href="projects.html">Projects</a>
                     </li>
-                    <li class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline"><a href="archive.html">Archive</a>
+                    <li
+                        class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline">
+                        <a href="archive.html">Archive</a>
                     </li>
-                    <li class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline"><a href="donate.html">Donate</a>
+                    <li
+                        class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline">
+                        <a href="donate.html">Donate</a>
                     </li>
                 </ul>
             </div>
@@ -82,7 +99,8 @@
                 <div class="-m-1 flex flex-wrap justify-between md:-m-2">
                     <div class="flex w-[50%] flex-wrap">
                         <div class="w-full p-1 md:p-2 mb-10">
-                            <a href="lhistoire.html" class="relative group block h-full w-full rounded-lg object-cover object-center">
+                            <a href="lhistoire.html"
+                                class="relative group block h-full w-full rounded-lg object-cover object-center">
                                 <div class="z-30 absolute top-0 left-0 overflow-hidden w-full h-full">
                                     <span
                                         class="absolute w-0 h-full left-0 top-0 bg-white group-hover:w-2 transition-[width] duration-300 ease-in"></span>
@@ -101,13 +119,15 @@
                                 </div>
                                 <div
                                     class="z-40 absolute top-[33%] left-3 opacity-0 group-hover:opacity-100 transition duration-200 ease-in delay-100 uppercase">
-                                    L'histoire coule de source<p class="text-2xl">2012</p></div>
+                                    L'histoire coule de source<p class="text-2xl">2012</p>
+                                </div>
                             </a>
                         </div>
                     </div>
                     <div class="flex w-[50%] flex-wrap">
                         <div class="w-full p-1 md:p-2 mb-10">
-                            <a href="waltzing.html" class="relative group block h-full w-full rounded-lg object-cover object-center">
+                            <a href="waltzing.html"
+                                class="relative group block h-full w-full rounded-lg object-cover object-center">
                                 <div class="z-30 absolute top-0 left-0 overflow-hidden w-full h-full">
                                     <span
                                         class="absolute w-0 h-full left-0 top-0 bg-white group-hover:w-2 transition-[width] duration-300 ease-in"></span>
@@ -126,13 +146,15 @@
                                 </div>
                                 <div
                                     class="z-40 absolute top-[33%] left-3 opacity-0 group-hover:opacity-100 transition duration-200 ease-in delay-100 uppercase">
-                                    WALTZING WORDS<p class="text-3xl">2011/12</p></div>
+                                    WALTZING WORDS<p class="text-3xl">2011/12</p>
+                                </div>
                             </a>
                         </div>
                     </div>
                     <div class="flex w-[50%] flex-wrap">
                         <div class="w-full p-1 md:p-2 mb-10">
-                            <a href="noli.html" class="relative group block h-full w-full rounded-lg object-cover object-center">
+                            <a href="noli.html"
+                                class="relative group block h-full w-full rounded-lg object-cover object-center">
                                 <div class="z-30 absolute top-0 left-0 overflow-hidden w-full h-full">
                                     <span
                                         class="absolute w-0 h-full left-0 top-0 bg-white group-hover:w-2 transition-[width] duration-300 ease-in"></span>
@@ -151,13 +173,15 @@
                                 </div>
                                 <div
                                     class="z-40 absolute top-[33%] left-3 opacity-0 group-hover:opacity-100 transition duration-200 ease-in delay-100 uppercase">
-                                    Noli me tangere<p class="text-3xl">2008/15</p></div>
+                                    Noli me tangere<p class="text-3xl">2008/15</p>
+                                </div>
                             </a>
                         </div>
                     </div>
                     <div class="flex w-[50%] flex-wrap">
                         <div class="w-full p-1 md:p-2 mb-10">
-                            <a href="infala.html" class="relative group block h-full w-full rounded-lg object-cover object-center">
+                            <a href="infala.html"
+                                class="relative group block h-full w-full rounded-lg object-cover object-center">
                                 <div class="z-30 absolute top-0 left-0 overflow-hidden w-full h-full">
                                     <span
                                         class="absolute w-0 h-full left-0 top-0 bg-white group-hover:w-2 transition-[width] duration-300 ease-in"></span>
@@ -176,13 +200,15 @@
                                 </div>
                                 <div
                                     class="z-40 absolute top-[33%] left-3 opacity-0 group-hover:opacity-100 transition duration-200 ease-in delay-100 uppercase">
-                                    Infala<p class="text-3xl">2011</p></div>
+                                    Infala<p class="text-3xl">2011</p>
+                                </div>
                             </a>
                         </div>
                     </div>
                     <div class="flex w-[50%] flex-wrap">
                         <div class="w-full p-1 md:p-2 mb-10">
-                            <a href="entangled.html" class="relative group block h-full w-full rounded-lg object-cover object-center">
+                            <a href="entangled.html"
+                                class="relative group block h-full w-full rounded-lg object-cover object-center">
                                 <div class="z-30 absolute top-0 left-0 overflow-hidden w-full h-full">
                                     <span
                                         class="absolute w-0 h-full left-0 top-0 bg-white group-hover:w-2 transition-[width] duration-300 ease-in"></span>
@@ -201,13 +227,15 @@
                                 </div>
                                 <div
                                     class="z-40 absolute top-[33%] left-3 opacity-0 group-hover:opacity-100 transition duration-200 ease-in delay-100 uppercase">
-                                    Entangled<p class="text-3xl">2010/11</p></div>
+                                    Entangled<p class="text-3xl">2010/11</p>
+                                </div>
                             </a>
                         </div>
                     </div>
                     <div class="flex w-[50%] flex-wrap">
                         <div class="w-full p-1 md:p-2 mb-10">
-                            <a href="jukebox.html" class="relative group block h-full w-full rounded-lg object-cover object-center">
+                            <a href="jukebox.html"
+                                class="relative group block h-full w-full rounded-lg object-cover object-center">
                                 <div class="z-30 absolute top-0 left-0 overflow-hidden w-full h-full">
                                     <span
                                         class="absolute w-0 h-full left-0 top-0 bg-white group-hover:w-2 transition-[width] duration-300 ease-in"></span>
@@ -226,7 +254,8 @@
                                 </div>
                                 <div
                                     class="z-40 absolute top-[33%] left-3 opacity-0 group-hover:opacity-100 transition duration-200 ease-in delay-100 uppercase">
-                                    Jukebox Installation<p class="text-3xl">2008</p></div>
+                                    Jukebox Installation<p class="text-3xl">2008</p>
+                                </div>
                             </a>
                         </div>
                     </div>
@@ -234,10 +263,12 @@
             </div>
         </section>
     </div>
-    <div class="m-auto w-8/12 text-[0.6rem] sm:text-sm font-inter text-slate-500 p-4 mt-12 border-t-slate-700 border-t-[1px] uppercase justify-center flex gap-4">
+    <div
+        class="m-auto w-8/12 text-[0.6rem] sm:text-sm font-inter text-slate-500 p-4 mt-12 border-t-slate-700 border-t-[1px] uppercase justify-center flex gap-4">
         <div>Contact at contact@tarapilbrow.com</div>
-        <div class="w-[20px]"><a href="https://www.facebook.com/tara.pilbrow/"><img src="img/f_logo_RGB-Blue_58.png" alt="" class=""></a></div>
-      </div>
+        <div class="w-[20px]"><a href="https://www.facebook.com/tara.pilbrow/"><img src="img/f_logo_RGB-Blue_58.png"
+                    alt="" class=""></a></div>
+    </div>
 </body>
 
 </html>

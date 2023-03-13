@@ -2,6 +2,15 @@
 <html>
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9M07KTMJ6S"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-9M07KTMJ6S');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
@@ -20,29 +29,29 @@
     <script>
         // Burger menus
         document.addEventListener('DOMContentLoaded', function () {
-          // open
-          const burger = document.querySelectorAll('.tham');
-          const menu = document.querySelectorAll('.navbar-menu');
-          const overlay = document.querySelectorAll('.overlay');
-          const closeMenu = function () {
-            for (var j = 0; j < menu.length; j++) {
-              menu[j].classList.toggle('invisible');
+            // open
+            const burger = document.querySelectorAll('.tham');
+            const menu = document.querySelectorAll('.navbar-menu');
+            const overlay = document.querySelectorAll('.overlay');
+            const closeMenu = function () {
+                for (var j = 0; j < menu.length; j++) {
+                    menu[j].classList.toggle('invisible');
+                }
+            };
+
+            if (burger.length && menu.length) {
+                for (var i = 0; i < burger.length; i++) {
+                    burger[i].addEventListener('click', closeMenu);
+                }
             }
-          };
-    
-          if (burger.length && menu.length) {
-            for (var i = 0; i < burger.length; i++) {
-              burger[i].addEventListener('click', closeMenu);
+
+            if (overlay.length) {
+                for (var i = 0; i < overlay.length; i++) {
+                    overlay[i].addEventListener('click', closeMenu);
+                }
             }
-          }
-    
-          if (overlay.length) {
-            for (var i = 0; i < overlay.length; i++) {
-              overlay[i].addEventListener('click', closeMenu);
-            }
-          }
         });
-      </script>
+    </script>
     <div>
         <nav class="sticky top-0 z-30 bg-opacity-80 bg-white">
             <div class="relative flex justify-between">
@@ -62,12 +71,20 @@
             </div>
             <div class="absolute z-50 top-0 right-0 w-80 h-screen bg-white text-black p-4 pt-8">
                 <ul class="border-r border-slate-200 text-slate-900">
-                    <li class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline"><a href="about.html">About</a></li>
-                    <li class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline"><a href="projects.html">Projects</a>
+                    <li
+                        class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline">
+                        <a href="about.html">About</a></li>
+                    <li
+                        class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline">
+                        <a href="projects.html">Projects</a>
                     </li>
-                    <li class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline"><a href="archive.html">Archive</a>
+                    <li
+                        class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline">
+                        <a href="archive.html">Archive</a>
                     </li>
-                    <li class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline"><a href="donate.html">Donate</a>
+                    <li
+                        class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline">
+                        <a href="donate.html">Donate</a>
                     </li>
                 </ul>
             </div>
@@ -78,7 +95,8 @@
             </div>
         </div>
         <div class="">
-            <div class="text-sm font-inter text-slate-500 uppercase my-4 ml-4"><a href="archive.html">&lt;- Archive</a></div>
+            <div class="text-sm font-inter text-slate-500 uppercase my-4 ml-4"><a href="archive.html">&lt;- Archive</a>
+            </div>
             <div class="embed-responsive embed-responsive-21by9 relative w-full overflow-hidden"
                 style="padding-top: 42.857143%">
                 <iframe class="embed-responsive-item absolute top-0 right-0 bottom-0 left-0 h-full w-full"
@@ -88,10 +106,26 @@
             </div>
             <div class="pt-6 mx-auto flex flex-col w-3/4 items-stretch">
                 <h1 class="text-4xl font-inter">Entangled</h1>
-                <p class="pt-5 text-xl font-inter font-light text-slate-500 text-center">The piece tells the story of a young couple, from their chance encounter in a train station, through different stages of desire and dependence, as the two gradually become ‘Entangled.’<br>At the start of the creative process the goal was not so much to portray narrative, but to explore alternative ways of using tango as a theatrical form. The vocabulary and form of Argentine Tango is conditioned by the constraints of a social dance context: the crowded dance floors, the conservative dress, the expectations inherent in a long tradition. Traditional stage tango circumvents these limitations by adding lifts, speed and drama. Entangled aims to adapt the intimacy and spontaneity of social dance forms to the stage, without resorting to acrobatics. The idea was simply to push existing movements into areas made possible by a contemporary dance training and mindset.<br>The result is movement that is often no longer recognisable as tango, but borrows heavily from the repertoire of leg interplay for which the dance is famous. The hooks, flicks, displacements and intertwining limbs provide a wealth of movement possibilities for a new form of partner dance. Combined with the weight and fluidity of contemporary dance, and the arm locks, combs and pretzels familiar in swing or salsa, the resulting movement is both unique and highly evocative.<br><br>“Entangled couldn’t help but get under your skin: we didn’t know where the dancers ended and the lovers began”<br>Keith Watson, Metro
+                <p class="pt-5 text-xl font-inter font-light text-slate-500 text-center">The piece tells the story of a
+                    young couple, from their chance encounter in a train station, through different stages of desire and
+                    dependence, as the two gradually become ‘Entangled.’<br>At the start of the creative process the
+                    goal was not so much to portray narrative, but to explore alternative ways of using tango as a
+                    theatrical form. The vocabulary and form of Argentine Tango is conditioned by the constraints of a
+                    social dance context: the crowded dance floors, the conservative dress, the expectations inherent in
+                    a long tradition. Traditional stage tango circumvents these limitations by adding lifts, speed and
+                    drama. Entangled aims to adapt the intimacy and spontaneity of social dance forms to the stage,
+                    without resorting to acrobatics. The idea was simply to push existing movements into areas made
+                    possible by a contemporary dance training and mindset.<br>The result is movement that is often no
+                    longer recognisable as tango, but borrows heavily from the repertoire of leg interplay for which the
+                    dance is famous. The hooks, flicks, displacements and intertwining limbs provide a wealth of
+                    movement possibilities for a new form of partner dance. Combined with the weight and fluidity of
+                    contemporary dance, and the arm locks, combs and pretzels familiar in swing or salsa, the resulting
+                    movement is both unique and highly evocative.<br><br>“Entangled couldn’t help but get under your
+                    skin: we didn’t know where the dancers ended and the lovers began”<br>Keith Watson, Metro
                 </p>
             </div>
-            <div id="carouselExampleCrossfade" class="relative pt-20 max-w-4xl m-auto" data-te-carousel-init data-te-carousel-slide>
+            <div id="carouselExampleCrossfade" class="relative pt-20 max-w-4xl m-auto" data-te-carousel-init
+                data-te-carousel-slide>
                 <div class="absolute inset-x-0 bottom-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
                     data-te-carousel-indicators>
                     <button type="button" data-te-target="#carouselExampleCrossfade" data-te-slide-to="0"
@@ -104,11 +138,12 @@
                     <button type="button" data-te-target="#carouselExampleCrossfade" data-te-slide-to="2"
                         class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
                         aria-label="Slide 3"></button>
-                        <button type="button" data-te-target="#carouselExampleCrossfade" data-te-slide-to="3"
+                    <button type="button" data-te-target="#carouselExampleCrossfade" data-te-slide-to="3"
                         class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
                         aria-label="Slide 4"></button>
                 </div>
-                <div class="relative w-full max-w-4xl m-auto overflow-hidden after:clear-both after:block after:content-['']">
+                <div
+                    class="relative w-full max-w-4xl m-auto overflow-hidden after:clear-both after:block after:content-['']">
                     <div class="relative float-left -mr-[100%] w-full max-w-4xl m-auto  !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
                         data-te-carousel-fade data-te-carousel-item data-te-carousel-active>
                         <img src="img/entangled11large.png" class="block w-full max-w-4xl m-auto"
@@ -120,13 +155,11 @@
                     </div>
                     <div class="relative float-left -mr-[100%] hidden w-full max-w-4xl m-auto !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
                         data-te-carousel-fade data-te-carousel-item>
-                        <img src="img/entangled3large.png" class="block w-full max-w-4xl m-auto"
-                            alt="Exotic Fruits" />
+                        <img src="img/entangled3large.png" class="block w-full max-w-4xl m-auto" alt="Exotic Fruits" />
                     </div>
                     <div class="relative float-left -mr-[100%] hidden w-full max-w-4xl m-auto !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
                         data-te-carousel-fade data-te-carousel-item>
-                        <img src="img/entangled4large.png" class="block w-full max-w-4xl m-auto"
-                            alt="Exotic Fruits" />
+                        <img src="img/entangled4large.png" class="block w-full max-w-4xl m-auto" alt="Exotic Fruits" />
                     </div>
                 </div>
                 <button
@@ -167,21 +200,24 @@
                     <h2 class="flex-auto pt-4">Tim Mascall</h2>
                 </div>
                 <div class="flex-none pr-20 pb-10">
-                    <div class="flex flex-col flex-nowrap text-sm sm:text-xl font-inter font-thin text-slate-500 justify-start tabular-nums">
+                    <div
+                        class="flex flex-col flex-nowrap text-sm sm:text-xl font-inter font-thin text-slate-500 justify-start tabular-nums">
                         <h2 class="flex-none uppercase">performance dates</h2>
-                        <h2 class="flex-none pt-4">10/18/2010  Resolution, The Place, London</h2>
-                        <h2 class="flex-none pt-1">04/2010  New Wolsey Theatre, Ipswich</h2>
-                        <h2 class="flex-none pt-1">04/02/2011  Kings Place, London</h2>
+                        <h2 class="flex-none pt-4">10/18/2010 Resolution, The Place, London</h2>
+                        <h2 class="flex-none pt-1">04/2010 New Wolsey Theatre, Ipswich</h2>
+                        <h2 class="flex-none pt-1">04/02/2011 Kings Place, London</h2>
 
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="m-auto w-8/12 text-[0.6rem] sm:text-sm font-inter text-slate-500 p-4 mt-12 border-t-slate-700 border-t-[1px] uppercase justify-center flex gap-4">
+    <div
+        class="m-auto w-8/12 text-[0.6rem] sm:text-sm font-inter text-slate-500 p-4 mt-12 border-t-slate-700 border-t-[1px] uppercase justify-center flex gap-4">
         <div>Contact at contact@tarapilbrow.com</div>
-        <div class="w-[20px]"><a href="https://www.facebook.com/tara.pilbrow/"><img src="img/f_logo_RGB-Blue_58.png" alt="" class=""></a></div>
-      </div>
+        <div class="w-[20px]"><a href="https://www.facebook.com/tara.pilbrow/"><img src="img/f_logo_RGB-Blue_58.png"
+                    alt="" class=""></a></div>
+    </div>
 </body>
 
 </html>
