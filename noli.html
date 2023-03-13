@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/mqt7jyl.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600&family=Sofia+Sans+Condensed:wght@600&display=swap"
+        rel="stylesheet">
+    <script src="/node_modules/tw-elements/dist/js/index.min.js"></script>
+</head>
+
+<body>
+    <script>
+        // Burger menus
+        document.addEventListener('DOMContentLoaded', function () {
+          // open
+          const burger = document.querySelectorAll('.tham');
+          const menu = document.querySelectorAll('.navbar-menu');
+          const overlay = document.querySelectorAll('.overlay');
+          const closeMenu = function () {
+            for (var j = 0; j < menu.length; j++) {
+              menu[j].classList.toggle('invisible');
+            }
+          };
+    
+          if (burger.length && menu.length) {
+            for (var i = 0; i < burger.length; i++) {
+              burger[i].addEventListener('click', closeMenu);
+            }
+          }
+    
+          if (overlay.length) {
+            for (var i = 0; i < overlay.length; i++) {
+              overlay[i].addEventListener('click', closeMenu);
+            }
+          }
+        });
+      </script>
+    <div>
+        <nav class="sticky top-0 z-30 bg-opacity-80 bg-white">
+            <div class="relative flex justify-between">
+                <a href="/src/index.html"><img src="img/logo.png" alt="Tara Pilbrow" class="h-10 m-2"></a>
+                <div class="z-50 mr-4 mt-4">
+                    <div class="tham tham-e-squeeze tham-w-6">
+                        <div class="tham-box">
+                            <div class="tham-inner"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="navbar-menu fixed z-50 top-0 left-0 w-screen h-screen invisible">
+            <div
+                class="overlay absolute z-40 w-screen h-screen top-0 right-0 bg-black/30 backdrop-blur-sm backdrop-brightness-150">
+            </div>
+            <div class="absolute z-50 top-0 right-0 w-80 h-screen bg-white text-black p-4 pt-8">
+                <ul class="border-r border-slate-200 text-slate-900">
+                    <li class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline"><a href="about.html">About</a></li>
+                    <li class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline"><a
+                            href="projects.html">Projects</a>
+                    </li>
+                    <li class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline"><a href="archive.html">Archive</a>
+                    </li>
+                    <li class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline"><a href="donate.html">Donate</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="z-50 absolute top-4 right-4 tham tham-active tham-e-squeeze tham-w-6">
+                <div class="tham-box">
+                    <div class="tham-inner"></div>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div class="text-sm font-inter text-slate-500 uppercase my-4 ml-4"><a href="archive.html">&lt;- Archive</a></div>
+            <div class="aspect-w-16 aspect-h-9">
+                <iframe src="https://player.vimeo.com/video/258033918?autoplay=1&loop=0" frameborder="0"
+                    allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="w-screen"></iframe>
+            </div>
+            <div class="py-12 mx-auto flex flex-col w-3/4 items-stretch">
+                <h1 class="text-4xl font-inter">NOLI ME TANGERE</h1>
+                <p class="pt-5 text-xl font-inter font-light text-slate-500 text-center">At the start of the century,
+                    confronted with the rising popularity of tango in Paris, the Parisian clergy beseeched Pope Pius to
+                    place a ban on the dance form. A pair of Tango dancers were summoned to the Vatican to defend their
+                    art-form.<br>This extraordinary rendez-vous at the Vatican provided the inspiration for Noli Me
+                    Tanguere. What might have passed through the minds of musician and dancer as they awaited their
+                    audience with his holiness. What did they feel was the essence of this controversial and yet
+                    universal art form?<br>Based on a series of narrative scores, this fully improvised piece has
+                    continued to mutate and evolve with every performance. Most recently it was adapted for a site
+                    specific performance commissioned by the Centre des Monuments Nationaux for the 50th Anniversary of
+                    Le Corbusier.
+                </p>
+            </div>
+            <div class="embed-responsive embed-responsive-21by9 relative w-full overflow-hidden"
+                style="padding-top: 42.857143%">
+                <iframe class="embed-responsive-item absolute top-0 right-0 bottom-0 left-0 h-full w-full"
+                    src="https://www.youtube.com/embed/qTaDBIGrw7o?rel=0&amp;showinfo=0&autoplay=0&loop=0"
+                    allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""
+                    data-gtm-yt-inspected-2340190_699="true" id="240632615"></iframe>
+            </div>
+            <div class="pt-20 mx-auto flex flex-row w-11/12 justify-between flex-wrap">
+                <div
+                    class="flex-none w-[25rem] sm:w-[40rem] grid grid-rows-3 grid-cols-[30rem, 8fr] gap-2 text-sm sm:text-xl font-inter text-slate-700 pb-10">
+                    <h2 class="col-span-2 flex-none uppercase pb-5 text-lg sm:text-2xl">Credits</h2>
+                    <h2 class="flex-none w-32 whitespace-nowrap pt-3">Choreographer / Performer</h2>
+                    <h2 class="flex-auto pt-3">Tara Pilbrow</h2>
+                    <h2 class="w-32 pt-3 whitespace-nowrap">Composer / Performer</h2>
+                    <h2 class="flex-auto pt-3">Tristan Mace</h2>
+                </div>
+                <div class="flex-none pr-20">
+                    <div
+                        class="flex flex-col flex-nowrap text-sm sm:text-xl font-inter font-thin text-slate-500 justify-start tabular-nums">
+                        <h2 class="flex-none uppercase">performance dates</h2>
+                        <h2 class="flex-none pt-4">10/23/2008 le triton, paris</h2>
+                        <h2 class="flex-none pt-1">11/25/2009 regard du cygne, paris</h2>
+                        <h2 class="flex-none pt-1">10/10/2015 la villa savoye, prissy</h2>
+                        <h2 class="flex-none pt-1">07/05/2015 la villa savoye, poissy</h2>
+                    </div>
+                </div>
+            </div>
+            <div id="carouselExampleCrossfade" class="relative max-w-4xl m-auto" data-te-carousel-init data-te-carousel-slide>
+                <div class="absolute inset-x-0 bottom-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+                    data-te-carousel-indicators>
+                    <button type="button" data-te-target="#carouselExampleCrossfade" data-te-slide-to="0"
+                        data-te-carousel-active
+                        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-te-target="#carouselExampleCrossfade" data-te-slide-to="1"
+                        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-te-target="#carouselExampleCrossfade" data-te-slide-to="2"
+                        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-te-target="#carouselExampleCrossfade" data-te-slide-to="3"
+                        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                        aria-label="Slide 4"></button>
+                        <button type="button" data-te-target="#carouselExampleCrossfade" data-te-slide-to="4"
+                        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                        aria-label="Slide 5"></button>
+                        <button type="button" data-te-target="#carouselExampleCrossfade" data-te-slide-to="5"
+                        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                        aria-label="Slide 6"></button>
+                </div>
+                <div class="relative w-full max-w-4xl m-auto overflow-hidden after:clear-both after:block after:content-['']">
+                    <div class="relative float-left -mr-[100%] w-full max-w-4xl m-auto !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+                        data-te-carousel-fade data-te-carousel-item data-te-carousel-active>
+                        <img src="img/past-nmt-photo-3.png" class="block w-full max-w-4xl m-auto" alt="Wild Landscape" />
+                    </div>
+                    <div class="relative float-left -mr-[100%] hidden w-full max-w-4xl m-auto !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+                        data-te-carousel-fade data-te-carousel-item>
+                        <img src="img/past-nmt-photo-4.png" class="block w-full max-w-4xl m-auto" alt="Camera" />
+                    </div>
+                    <div class="relative float-left -mr-[100%] hidden w-full max-w-4xl m-auto !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+                        data-te-carousel-fade data-te-carousel-item>
+                        <img src="img/past-nmt-photo-5.png" class="block w-full max-w-4xl m-auto" alt="Exotic Fruits" />
+                    </div>
+                    <div class="relative float-left -mr-[100%] hidden w-full max-w-4xl m-auto !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+                        data-te-carousel-fade data-te-carousel-item>
+                        <img src="img/past-nmt-photo-7.png" class="block w-full max-w-4xl m-auto" alt="Exotic Fruits" />
+                    </div>
+                    <div class="relative float-left -mr-[100%] hidden w-full max-w-4xl m-auto !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+                        data-te-carousel-fade data-te-carousel-item>
+                        <img src="img/past-nmt-photo-8.png" class="block w-full max-w-4xl m-auto" alt="Exotic Fruits" />
+                    </div>
+                    <div class="relative float-left -mr-[100%] hidden w-full max-w-4xl m-auto !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+                        data-te-carousel-fade data-te-carousel-item>
+                        <img src="img/t-red-and-black.png" class="block w-full max-w-4xl m-auto" alt="Exotic Fruits" />
+                    </div>
+                </div>
+                <button
+                    class="absolute top-0 bottom-0 left-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                    type="button" data-te-target="#carouselExampleCrossfade" data-te-slide="prev">
+                    <span class="inline-block h-8 w-8">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="h-6 w-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                        </svg>
+                    </span>
+                    <span
+                        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Previous</span>
+                </button>
+                <button
+                    class="absolute top-0 bottom-0 right-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                    type="button" data-te-target="#carouselExampleCrossfade" data-te-slide="next">
+                    <span class="inline-block h-8 w-8">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="h-6 w-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </span>
+                    <span
+                        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="m-auto w-8/12 text-[0.6rem] sm:text-sm font-inter text-slate-500 p-4 mt-12 border-t-slate-700 border-t-[1px] uppercase justify-center flex gap-4">
+        <div>Contact at contact@tarapilbrow.com</div>
+        <div class="w-[20px]"><a href="https://www.facebook.com/tara.pilbrow/"><img src="img/f_logo_RGB-Blue_58.png" alt="" class=""></a></div>
+      </div>
+</body>
+
+</html>

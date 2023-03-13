@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/mqt7jyl.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600&family=Sofia+Sans+Condensed:wght@600&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <script>
+        // Burger menus
+        document.addEventListener('DOMContentLoaded', function () {
+            // open
+            const burger = document.querySelectorAll('.tham');
+            const menu = document.querySelectorAll('.navbar-menu');
+            const overlay = document.querySelectorAll('.overlay');
+            const closeMenu = function () {
+                for (var j = 0; j < menu.length; j++) {
+                    menu[j].classList.toggle('invisible');
+                }
+            };
+
+            if (burger.length && menu.length) {
+                for (var i = 0; i < burger.length; i++) {
+                    burger[i].addEventListener('click', closeMenu);
+                }
+            }
+
+            if (overlay.length) {
+                for (var i = 0; i < overlay.length; i++) {
+                    overlay[i].addEventListener('click', closeMenu);
+                }
+            }
+        });
+    </script>
+    <div>
+        <nav class="sticky top-0 z-30 bg-opacity-80 bg-white">
+            <div class="relative flex justify-between">
+                <a href="/src/index.html"><img src="img/logo.png" alt="Tara Pilbrow" class="h-10 m-2"></a>
+                <div class="z-50 mr-4 mt-4">
+                    <div class="tham tham-e-squeeze tham-w-6">
+                        <div class="tham-box">
+                            <div class="tham-inner"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="navbar-menu fixed z-50 top-0 left-0 w-screen h-screen invisible">
+            <div
+                class="overlay absolute z-40 w-screen h-screen top-0 right-0 bg-black/30 backdrop-blur-sm backdrop-brightness-150">
+            </div>
+            <div class="absolute z-50 top-0 right-0 w-80 h-screen bg-white text-black p-4 pt-8">
+                <ul class="border-r border-slate-200 text-slate-900">
+                    <li
+                        class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline">
+                        <a href="about.html">About</a></li>
+                    <li
+                        class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline">
+                        <a href="projects.html">Projects</a>
+                    </li>
+                    <li
+                        class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline">
+                        <a href="archive.html">Archive</a>
+                    </li>
+                    <li
+                        class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline">
+                        <a href="donate.html">Donate</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="z-50 absolute top-4 right-4 tham tham-active tham-e-squeeze tham-w-6">
+                <div class="tham-box">
+                    <div class="tham-inner"></div>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div class="aspect-w-16 aspect-h-9">
+                <iframe src="https://player.vimeo.com/video/580530553?autoplay=1&loop=0&autopause=0&?muted=1"
+                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+                    class="w-screen"></iframe>
+            </div>
+            <div class="flex flex-row">
+                <div class="flex-auto">
+                    <div class="pt-6 mx-auto flex flex-col w-3/4 items-stretch">
+                        <h1 class="text-4xl font-inter">Breathe</h1>
+                        <h2 class="pt-6 text-xl font-inter font-light text-red-700 italic">"Mindblowing! It made me
+                            reassess my humanity." Brian J Kenny, musician</h2>
+                        <p class="pt-5 text-xl font-inter font-light text-slate-500 text-center">“Breathe” is a
+                            reflection on the crazy times we have all been living through, a celebration of our ability
+                            to support each other; to move, breathe, and dance together despite it all.<br>“We started
+                            work on this piece in September 2020. It was an incredible lifeline, both for the dancers,
+                            who had been unable to work together for more than 6 months, and for myself. I really wanted
+                            to find a safe way to share live performance at a time when we were all wedded to screens as
+                            our only connection with the outside world. So many things were impacting our lives last
+                            year, from the pandemic, to unprecedented wild fires, to a fundamental shift in the fight
+                            for Black Lives. As dancers we give voice to our experiences through the body. The most
+                            fundamental way of connecting to the physical impact of stress on our body is through
+                            breath. I wanted to use breath as a way of reflecting upon all of the challenges of the last
+                            18 months, and also recognize the importance of breath, and of the physical body, as a
+                            vessel for healing and resilience.” </p>
+                    </div>
+                    <div class="w-11/12 pt-20 mx-auto flex flex-row justify-between flex-wrap">
+                        <div
+                            class="flex-none w-20rem sm:w-[30rem] grid grid-rows-7 sm:grid-cols-[30rem, 6fr] sm:grid-cols-[30rem, 8fr] gap-2 text:sm sm:text-xl font-inter text-slate-700 pb-10">
+                            <h2 class="row-span-3 flex-none w-32">Performers</h2>
+                            <h2 class="flex-auto">Julie Crothers</h2>
+                            <h2 class="flex-auto">Colin Epstein</h2>
+                            <h2 class="flex-auto">Hannah Westbrook</h2>
+                            <h2 class="row-span-4 w-32 pt-3">Voicework</h2>
+                            <h2 class="flex-auto pt-3">Amos White</h2>
+                            <h2 class="flex-auto">Mark Farrell</h2>
+                            <h2 class="flex-auto">Katina Letheule</h2>
+                            <h2 class="flex-auto">Jeff Raz</h2>
+                            <h2 class="flex-none w-32 pt-3">Sound tech</h2>
+                            <h2 class="flex-auto pt-3 ">Tanoa Stewart <br />(Atown Agency)</h2>
+                            <h2 class="flex-none w-32 pt-3">Dramaturg</h2>
+                            <h2 class="flex-auto pt-3">Jeff Raz</h2>
+                            <h2 class="col-span-2  pt-3">Choreographed and directed by Tara Pilbrow</h2>
+                        </div>
+                        <div class="flex-none pr-20">
+                            <div
+                                class="flex flex-col flex-nowrap text:sm sm:text-xl font-inter font-thin text-slate-500 justify-start tabular-nums">
+                                <h2 class="flex-none uppercase">performance dates</h2>
+                                <h2 class="flex-none pt-4">07/08/2021 The Healing Garden, Alameda</h2>
+                                <h2 class="flex-none pt-1">07/09/2021 The Healing Garden, Alameda</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-auto w-3/4">
+                        <p class="pt-5 text-lg font-inter font-light text-slate-500 text-center">This performance was
+                            part of the West End Arts District HEALING GARDEN SUMMER SERIES.<br>We would like to
+                            thank:<br>Series sponsors: Deep Eddy Vodka, Main Street Supply, West Alameda Business
+                            Association, Christopher and Trudi Seiwald.<br>Series Patrons: Michael Lane Homes, Alameda
+                            Municipal Power, Grocery outlet, Sierra Nevada, Junipero Gin<br>And our Series
+                            Partners:<br>The Fireside Lounge, Ivy Room, Calafia Taqueria and A-town Booking Agency</p>
+                    </div>
+                </div>
+                <div class="flex-none w-10 h-full text-md font-inter text-slate-500 uppercase"><a href="projects.html"
+                        class="block rotate-90 pl-10 underline underline-offset-4 hover:underline-offset-8 whitespace-nowrap">
+                        Other Projects</a></div>
+            </div>
+        </div>
+    </div>
+    <div
+        class="m-auto w-8/12 text-[0.6rem] sm:text-sm font-inter text-slate-500 p-4 mt-12 border-t-slate-700 border-t-[1px] uppercase justify-center flex gap-4">
+        <div>Contact at contact@tarapilbrow.com</div>
+        <div class="w-[20px]"><a href="https://www.facebook.com/tara.pilbrow/"><img src="img/f_logo_RGB-Blue_58.png"
+                    alt="" class=""></a></div>
+    </div>
+</body>
+
+</html>

@@ -1,104 +1,190 @@
-<!DOCTYPE html>
-<html  >
+<!doctype html>
+<html>
+
 <head>
-  
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/images/tplogo-1.png" type="image/x-icon">
-  <meta name="description" content="">
-  
-  
-  <title>TARA PILBROW DANCE</title>
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="assets/tether/tether.min.css">
-  <link rel="stylesheet" href="assets/dropdown/css/style.css">
-  <link rel="stylesheet" href="assets/theme/css/style.css">
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-  
-  
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/mqt7jyl.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600&family=Sofia+Sans+Condensed:wght@600&display=swap"
+    rel="stylesheet">
+  <script defer src="https://unpkg.com/tailwindcss-intersect@1.x.x/dist/observer.min.js"></script>
 </head>
+
 <body>
+  <script>
+    // Burger menus
+    document.addEventListener('DOMContentLoaded', function () {
+      // open
+      const burger = document.querySelectorAll('.tham');
+      const menu = document.querySelectorAll('.navbar-menu');
+      const overlay = document.querySelectorAll('.overlay');
+      const closeMenu = function () {
+        for (var j = 0; j < menu.length; j++) {
+          menu[j].classList.toggle('invisible');
+        }
+      };
 
-<section id='top-1'></section>
+      if (burger.length && menu.length) {
+        for (var i = 0; i < burger.length; i++) {
+          burger[i].addEventListener('click', closeMenu);
+        }
+      }
 
-
-
-<!-- Analytics -->
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-30018562-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-30018562-1');
-</script>
-<!-- /Analytics -->
-
-
-  <section class="extMenu3 menu cid-rV3MQEpzkx" once="menu" id="extMenu10-l">
-
-    
-    
-
-    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
-        <div class="navbar-brand">
-            
-            <span class="navbar-caption-wrap"><a class="navbar-caption text-primary display-2" href="index.html">TARA PILBROW DANCE</a></span>
-        </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+      if (overlay.length) {
+        for (var i = 0; i < overlay.length; i++) {
+          overlay[i].addEventListener('click', closeMenu);
+        }
+      }
+    });
+  </script>
+  <div class="relative">
+    <nav class="class sticky top-0 z-30 bg-opacity-80 bg-white opacity-0 animate-[show_0.5s_2s_ease-in_1_forwards]">
+      <div class="relative flex justify-between">
+        <a href="/src/index.html"><img src="img/logo.png" alt="Tara Pilbrow" class="h-10 m-2"></a>
+        <div class="z-50 mr-4 mt-4">
+          <div class="tham tham-e-squeeze tham-w-6">
+            <div class="tham-box">
+              <div class="tham-inner"></div>
             </div>
-        </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item">
-                    <a class="nav-link link text-warning display-5" href="about.html">ABOUT</a>
-                </li>
-                <li class="nav-item dropdown open">
-                    <a class="nav-link link text-warning dropdown-toggle display-5" href="https://mobirise.com" data-toggle="dropdown-submenu" aria-expanded="true">WORK</a><div class="dropdown-menu"><a class="text-warning dropdown-item display-5" href="dance.html">DANCE</a><a class="text-warning dropdown-item display-5" href="dancefilm.html">DANCE FILM</a></div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link link text-warning display-5" href="animatealameda.html">ANIMATE ALAMEDA</a>
-                </li><li class="nav-item"><a class="nav-link link text-warning display-5" href="tango.html">TANGO</a></li></ul>
-            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-md btn-primary-outline display-4" href="contact.html">
-                    CONTACT ME
-                </a></div>
+          </div>
+        </div>
       </div>
     </nav>
-</section>
-
-<section class="cid-rWkQ1WIkbd" id="image3-37">
-
-    
-
-    <figure class="mbr-figure container">
-            <div class="image-block" style="width: 80%;">
-                <img src="assets/images/t-red-and-black.png" width="1400" alt="" title="Photo by Aaron Davies">
-                
+    <div class="navbar-menu fixed z-50 top-0 left-0 w-screen h-screen invisible">
+      <div
+        class="overlay absolute z-40 w-screen h-screen top-0 right-0 bg-black/30 backdrop-blur-md backdrop-brightness-150">
+      </div>
+      <div class="absolute z-50 top-0 right-0 w-80 h-screen bg-white text-black p-4 pt-8">
+        <ul class="border-r border-slate-200 text-slate-900">
+          <li
+            class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline uppercase">
+            <a href="about.html">About</a>
+          </li>
+          <li
+            class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline uppercase">
+            <a href="projects.html">Projects</a>
+          </li>
+          <li
+            class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline uppercase">
+            <a href="archive.html">Archive</a>
+          </li>
+          <li
+            class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline uppercase">
+            <a href="donate.html">Donate</a>
+          </li>
+        </ul>
+      </div>
+      <div class="z-50 absolute top-4 right-4 tham tham-active tham-e-squeeze tham-w-6">
+        <div class="tham-box">
+          <div class="tham-inner"></div>
+        </div>
+      </div>
+    </div>
+    <div class="absolute top-0 left-0 pb-12 flex flex-col justify-center w-screen">
+      <div
+        class="flex flex-col justify-center mx-auto w-[380px] sm:w-[640px] lg:w-[768px] xl:w-[1024px] 2xl:w-[1280px]">
+        <div
+          class="flex-none mx-auto relative bg-white overflow-hidden h-screen flex items-center justify-center animate-[danceShrink_0.7s_2.5s_ease-in_1_forwards] sm:animate-[smDanceShrink_0.7s_2.5s_ease-in_1_forwards] lg:animate-[mdDanceShrink_0.7s_2.5s_ease-in_1_forwards] xl:animate-[lgDanceShrink_0.7s_2.5s_ease-in_1_forwards]">
+          <video autoplay loop muted playsinline class="flex-none w-full z-0">
+            <source src="video/homeVideo2.mp4" type="video/mp4" />
+          </video>
+          <div
+            class="absolute w-full h-full flex items-center justify-center font-nobel flex-none z-10 text-[6rem] sm:text-[10rem] lg:text-[12.3rem] xl:text-[16.4rem] 2xl:text-[20.6rem] uppercase bg-white font-extrabold text-grayDance-100 animate-[dance_0.7s_1s_ease-in_1_forwards]">
+            Dance
+          </div>
+          <div
+            class="absolute w-full h-full flex items-center justify-start font-nobel tracking-[0.12em] lg:tracking-[0.13em] 2xl:tracking-[0.15em] z-20 text-[3rem] sm:text-[5rem] lg:text-[5.8rem] xl:text-[7.7rem] 2xl:text-[9.5rem] uppercase font-light text-gray-800] animate-[hide_0.7s_1s_ease-in_1_forwards]">
+            <div class=" -mt-[15px] sm:-mt-[35px] lg:-mt-[43px] xl:-mt-[60px] 2xl:-mt-[70px]">
+              Tara</div>
+          </div>
+          <div
+            class="absolute w-full h-full flex items-center justify-end font-nobel tracking-[0.2em] lg:tracking-[0.195em] xl:tracking-[0.20em] 2xl:tracking-[0.24em] z-20 text-[3rem] sm:text-[5rem] lg:text-[5.8rem] xl:text-[7.7rem] 2xl:text-[9.5rem] uppercase font-light text-grayDance-80 animate-[hide_0.7s_1s_ease-in_1_forwards]">
+            <div
+              class="-mr-[15px] 2xl:-mr-[30px] -mb-[50px] sm:-mb-[85px] lg:-mb-[88px] xl:-mb-[120px] 2xl:-mb-[150px]">
+              Pilbrow</div>
+          </div>
+          <div
+            class="absolute w-full h-full flex items-center justify-center text-center sm:text-end font-nobel tracking-[0.17em] lg:tracking-[0.195em] xl:tracking-[0.20em] z-20 text-[0.8rem] sm:text-[1rem] lg:text-[1.2rem] xl:text-[1.6rem] uppercase font-light text-grayDance-80 opacity-0 animate-[show_0.7s_1.5s_ease-in_1_forwards]">
+            <div class="w-11/12 -mb-[120px] sm:-mb-[150px] lg:-mb-[210px] xl:-mb-[250px] 2xl:-mb-[300px]">
+              through the body we connect with the world
             </div>
-    </figure>
-</section>
+          </div>
 
-
-  <script src="assets/web/assets/jquery/jquery.min.js"></script>
-  <script src="assets/popper/popper.min.js"></script>
-  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/tether/tether.min.js"></script>
-  <script src="assets/smoothscroll/smooth-scroll.js"></script>
-  <script src="assets/dropdown/js/nav-dropdown.js"></script>
-  <script src="assets/dropdown/js/navbar-dropdown.js"></script>
-  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
-  <script src="assets/theme/js/script.js"></script>
-  
-  
+        </div>
+        <div
+          class="relative mx-auto w-11/12 p-4 pt-10 scale-50 opacity-0 intersect:scale-100 intersect:opacity-100 transition intersect-once">
+          <div class="relative max-w-5xl mx-auto ">
+            <h1 class="text-xl xl:text-2xl 2xl:text-3xl font-inter font-bold ">TARA PILBROW DANCE invests in the
+              capacity of
+              the moving body to open us to a fuller lived experience; the power of dance to build empathy, awareness
+              and
+              tolerance; to connect communities and combat discrimination.</h1>
+          </div>
+        </div>
+      </div>
+      <div
+        class="relative mx-auto pt-14 scale-50 opacity-0 intersect:scale-100 intersect:opacity-100 transition intersect-once">
+        <div class="w-screen h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px] overflow-hidden">
+          <a href="about.html">
+            <img src="img/Homepage 1.jpg" class="object-center object-cover w-full h-full">
+            <h2
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-sofia font-extrabold text-white uppercase w-full p-4 text-center">
+              Weaving dance into the fabric of alameda</h2>
+          </a>
+        </div>
+      </div>
+      <div
+        class="relative mx-auto scale-50 opacity-0 intersect:scale-100 intersect:opacity-100 transition intersect-once">
+        <div class="w-screen h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px] overflow-hidden">
+          <a href="uplift.html">
+            <img src="img/Homepage 2.jpg" class="object-center object-cover w-full h-full">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full">
+              <h2
+                class="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-sofia font-extrabold text-white uppercase w-full text-center">
+                Uplift: portraits of the artists of alameda</h2>
+              <h4
+                class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-sofia font-extrabold text-white uppercase w-full text-center">
+                Collaboration with Maurice Ramirez</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div
+        class="relative mx-auto scale-50 opacity-0 intersect:scale-100 intersect:opacity-100 transition intersect-once">
+        <div class="w-screen h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px] overflow-hidden">
+          <a href="/src/Breathe.html">
+            <img src="img/Homepage 3.jpg" class="object-center object-cover w-full h-full">
+            <h2
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-sofia font-extrabold text-white uppercase w-full p-4 text-center">
+              Breathe</h2>
+          </a>
+        </div>
+      </div>
+      <div
+        class="relative mx-auto scale-50 opacity-0 intersect:scale-100 intersect:opacity-100 transition intersect-once">
+        <div class="w-screen h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px] overflow-hidden">
+          <a href="/src/about.html#curation">
+            <img src="img/Homepage 4.jpg" class="object-center object-cover w-full h-full">
+            <h2
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-sofia font-extrabold text-white uppercase w-full p-4 text-center">
+              Curation | Creating Opportunities</h2>
+          </a>
+        </div>
+      </div>
+      <div
+        class="m-auto w-8/12 text-[0.6rem] sm:text-sm font-inter text-slate-500 p-4 mt-12 border-t-slate-700 border-t-[1px] uppercase justify-center flex gap-4">
+        <div>Contact at contact@tarapilbrow.com</div>
+        <div class="w-[20px]"><a href="https://www.facebook.com/tara.pilbrow/"><img src="img/f_logo_RGB-Blue_58.png"
+              alt="" class=""></a></div>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>

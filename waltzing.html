@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/mqt7jyl.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600&family=Sofia+Sans+Condensed:wght@600&display=swap"
+        rel="stylesheet">
+    <script src="/node_modules/tw-elements/dist/js/index.min.js"></script>
+</head>
+
+<body>
+    <script>
+        // Burger menus
+        document.addEventListener('DOMContentLoaded', function () {
+          // open
+          const burger = document.querySelectorAll('.tham');
+          const menu = document.querySelectorAll('.navbar-menu');
+          const overlay = document.querySelectorAll('.overlay');
+          const closeMenu = function () {
+            for (var j = 0; j < menu.length; j++) {
+              menu[j].classList.toggle('invisible');
+            }
+          };
+    
+          if (burger.length && menu.length) {
+            for (var i = 0; i < burger.length; i++) {
+              burger[i].addEventListener('click', closeMenu);
+            }
+          }
+    
+          if (overlay.length) {
+            for (var i = 0; i < overlay.length; i++) {
+              overlay[i].addEventListener('click', closeMenu);
+            }
+          }
+        });
+      </script>
+    <div>
+        <nav class="sticky top-0 z-30 bg-opacity-80 bg-white">
+            <div class="relative flex justify-between">
+                <a href="/src/index.html"><img src="img/logo.png" alt="Tara Pilbrow" class="h-10 m-2"></a>
+                <div class="z-50 mr-4 mt-4">
+                    <div class="tham tham-e-squeeze tham-w-6">
+                        <div class="tham-box">
+                            <div class="tham-inner"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="navbar-menu fixed z-50 top-0 left-0 w-screen h-screen invisible">
+            <div
+                class="overlay absolute z-40 w-screen h-screen top-0 right-0 bg-black/30 backdrop-blur-sm backdrop-brightness-150">
+            </div>
+            <div class="absolute z-50 top-0 right-0 w-80 h-screen bg-white text-black p-4 pt-8">
+                <ul class="border-r border-slate-200 text-slate-900">
+                    <li class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline uppercase"><a href="about.html">About</a></li>
+                    <li class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline uppercase" ><a
+                            href="projects.html">Projects</a>
+                    </li>
+                    <li class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline uppercase" ><a href="archive.html">Archive</a>
+                    </li>
+                    <li class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline uppercase" ><a href="donate.html">Donate</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="z-50 absolute top-4 right-4 tham tham-active tham-e-squeeze tham-w-6">
+                <div class="tham-box">
+                    <div class="tham-inner"></div>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div class="text-sm font-inter text-slate-500 uppercase my-4 ml-4"><a href="archive.html">&lt;- Archive</a></div>
+            <div class="embed-responsive embed-responsive-21by9 relative w-full overflow-hidden"
+                style="padding-top: 42.857143%">
+                <iframe class="embed-responsive-item absolute top-0 right-0 bottom-0 left-0 h-full w-full"
+                    src="https://www.youtube.com/embed/o3mssNea8o4?rel=0&amp;showinfo=0&autoplay=1&loop=0"
+                    allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" data-gtm-yt-inspected-2340190_699="true" id="240632615"></iframe>
+            </div>
+            <div class="pt-6 mx-auto flex flex-col w-3/4 items-stretch">
+                <h1 class="text-4xl font-inter">Waltzing Words</h1>
+                <p class="pt-5 text-xl font-inter font-light text-slate-500 text-center">This solo multimedia work looks at how one person grows and develops within an urban environment. The dancer is cradled by a mass of voices, a barrage of words in which voices become sound rather than sense. At first she appears as a child playing in an adult world, self-absorbed, fascinated as much by her own body as the sounds and sights around her. Then gradually comes the discovery of the other, of sensuality, of her body as a means of communication.
+                    The piece explores the irresistible pull of spirals, be it in the body, in graphic form or in the continuous flow of the waltz. The idea that in our spatial and social relations with our environment, our conscious decisions serve only to punctuate the flow of inevitable progress that carries us from one day to the next.
+                </p>
+                <p class="pt-5 text-xl font-inter font-light text-slate-500 text-center italic">“When the noise faded away to reveal the euphonious strains of Chopin, Pilbrow came alive, her muscular back just as arresting as her eyes.<br>She danced as a woman, reminding me of a modern day Isadora Duncan as she clutched her solar plexus while the lights came down.”<br>Germaine Cheng, Resolution Reviews
+                </p>
+            </div>
+            <div id="carouselExampleCrossfade" class="relative pt-20 max-w-4xl m-auto" data-te-carousel-init data-te-carousel-slide>
+                <div class="absolute inset-x-0 bottom-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+                    data-te-carousel-indicators>
+                    <button type="button" data-te-target="#carouselExampleCrossfade" data-te-slide-to="0"
+                        data-te-carousel-active
+                        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-te-target="#carouselExampleCrossfade" data-te-slide-to="1"
+                        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-te-target="#carouselExampleCrossfade" data-te-slide-to="2"
+                        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-te-target="#carouselExampleCrossfade" data-te-slide-to="3"
+                        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="relative w-full max-w-4xl m-auto overflow-hidden after:clear-both after:block after:content-['']">
+                    <div class="relative float-left -mr-[100%] w-full max-w-4xl m-auto !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+                        data-te-carousel-fade data-te-carousel-item data-te-carousel-active>
+                        <img src="img/past-productions-list-ww-plain.png" class="block w-full max-w-4xl m-auto" alt="Wild Landscape" />
+                    </div>
+                    <div class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+                        data-te-carousel-fade data-te-carousel-item>
+                        <img src="img/past-ww-photo-10.png" class="block w-full max-w-4xl m-auto" alt="Camera" />
+                    </div>
+                    <div class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+                        data-te-carousel-fade data-te-carousel-item>
+                        <img src="img/past-ww-photo-2.png" class="block w-full max-w-4xl m-auto" alt="Exotic Fruits" />
+                    </div>
+                    <div class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+                        data-te-carousel-fade data-te-carousel-item>
+                        <img src="img/past-ww-photo-9.png" class="block w-full max-w-4xl m-auto" alt="Exotic Fruits" />
+                    </div>
+                </div>
+                <button
+                    class="absolute top-0 bottom-0 left-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                    type="button" data-te-target="#carouselExampleCrossfade" data-te-slide="prev">
+                    <span class="inline-block h-8 w-8">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="h-6 w-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                        </svg>
+                    </span>
+                    <span
+                        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Previous</span>
+                </button>
+                <button
+                    class="absolute top-0 bottom-0 right-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                    type="button" data-te-target="#carouselExampleCrossfade" data-te-slide="next">
+                    <span class="inline-block h-8 w-8">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="h-6 w-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </span>
+                    <span
+                        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
+                </button>
+            </div>
+            <div class="pt-20 mx-auto flex flex-row w-11/12 justify-between flex-wrap">
+                <div class="flex-none w-[25rem] sm:w-[40rem] grid grid-rows-5 grid-cols-[30rem, 8fr] gap-2 text-sm sm:text-xl font-inter text-slate-700 pb-10">
+                    <h2 class="col-span-2 flex-none uppercase pb-5 text-lg sm:text-2xl">Credits</h2>
+                    <h2 class="flex-none w-32 whitespace-nowrap">Choreographer / Performer</h2>
+                    <h2 class="flex-auto">Tara Pilbrow</h2>
+                    <h2 class="w-32 pt-3 whitespace-nowrap">Sound design</h2>
+                    <h2 class="flex-auto pt-3">Ben Wright</h2>
+                    <h2 class="w-32 pt-3 whitespace-nowrap">Graphic design</h2>
+                    <h2 class="flex-auto pt-3">Linda Pontoreiro</h2>
+                    <h2 class="w-32 pt-3 whitespace-nowrap">Lighting design</h2>
+                    <h2 class="flex-auto pt-3">Prema Metha</h2>
+                </div>
+                <div class="flex-none pr-20">
+                    <div class="flex flex-col flex-nowrap text-sm sm:text-xl font-inter font-thin text-slate-500 justify-start tabular-nums">
+                        <h2 class="flex-none uppercase">performance dates</h2>
+                        <h2 class="flex-none pt-4">11/07/2011 Cockpit Theatre, London (work in progress)</h2>
+                        <h2 class="flex-none pt-1">15/02/2012 Resolutions, The Place, London</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="m-auto w-8/12 text-[0.6rem] sm:text-sm font-inter text-slate-500 p-4 mt-12 border-t-slate-700 border-t-[1px] uppercase justify-center flex gap-4">
+        <div>Contact at contact@tarapilbrow.com</div>
+        <div class="w-[20px]"><a href="https://www.facebook.com/tara.pilbrow/"><img src="img/f_logo_RGB-Blue_58.png" alt="" class=""></a></div>
+      </div>
+</body>
+
+</html>

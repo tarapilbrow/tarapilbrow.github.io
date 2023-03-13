@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/mqt7jyl.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600&family=Sofia+Sans+Condensed:wght@600&display=swap"
+    rel="stylesheet">
+  <script defer src="https://unpkg.com/tailwindcss-intersect@1.x.x/dist/observer.min.js"></script>
+</head>
+
+<body>
+  <script>
+    // Burger menus
+    document.addEventListener('DOMContentLoaded', function () {
+      // open
+      const burger = document.querySelectorAll('.tham');
+      const menu = document.querySelectorAll('.navbar-menu');
+      const overlay = document.querySelectorAll('.overlay');
+      const closeMenu = function () {
+        for (var j = 0; j < menu.length; j++) {
+          menu[j].classList.toggle('invisible');
+        }
+      };
+
+      if (burger.length && menu.length) {
+        for (var i = 0; i < burger.length; i++) {
+          burger[i].addEventListener('click', closeMenu);
+        }
+      }
+
+      if (overlay.length) {
+        for (var i = 0; i < overlay.length; i++) {
+          overlay[i].addEventListener('click', closeMenu);
+        }
+      }
+    });
+  </script>
+  <div>
+    <nav class="sticky top-0 z-30 bg-opacity-80 bg-white">
+      <div class="relative flex justify-between">
+        <a href="/src/index.html"><img src="img/logo.png" alt="Tara Pilbrow" class="h-10 m-2"></a>
+        <div class="z-50 mr-4 mt-4">
+          <div class="tham tham-e-squeeze tham-w-6">
+            <div class="tham-box">
+              <div class="tham-inner"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="navbar-menu fixed z-50 top-0 left-0 w-screen h-screen invisible">
+      <div
+        class="overlay absolute z-40 w-screen h-screen top-0 right-0 bg-black/30 backdrop-blur-md backdrop-brightness-150">
+      </div>
+      <div class="absolute z-50 top-0 right-0 w-80 h-screen bg-white text-black p-4 pt-8">
+        <ul class="border-r border-slate-200 text-slate-900">
+          <li
+            class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline uppercase">
+            <a href="about.html">About</a>
+          </li>
+          <li
+            class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline uppercase">
+            <a href="projects.html">Projects</a>
+          </li>
+          <li
+            class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline uppercase">
+            <a href="archive.html">Archive</a>
+          </li>
+          <li
+            class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline uppercase">
+            Donate</li>
+        </ul>
+      </div>
+      <div class="z-50 absolute top-4 right-4 tham tham-active tham-e-squeeze tham-w-6">
+        <div class="tham-box">
+          <div class="tham-inner"></div>
+        </div>
+      </div>
+    </div>
+    <div class="pt-8 w-11/12 mx-auto">
+      <div class="text-xl font-inter font-light text-slate-500">
+        Tara Pilbrow Dance is committed to providing safe, equitable working conditions for the dancers and
+        collaborators who are the raw material of our craft. We rely on the generous contributions of people like you to
+        keep serving our community. Your tax deductible donation will enable us to grow our impact and improve our
+        artistry.<br><br>
+        <span class="font-bold">THANK YOU.</span>
+      </div>
+      <div class="w-full text-center pt-12">
+        <a href="https://www.westendartsdistrict.org/support"
+          class="uppercase p-2 border-2 w-fit mx-auto border-solid border-slate-700 text-3xl">Donate</a>
+      </div>
+      <div class="text-xl font-inter font-light text-slate-500  pt-12">
+        Tara Pilbrow Dance is a Fiscally Sponsored project of West End Arts District.<br><br> You can make a secure
+        donation through the West End Arts District website. Please write TARA PILBROW DANCE in the 'other notes' field
+        on the donation form to ensure that your donation reaches us.
+      </div>
+      <img src="img/ADF website home.png" alt="" class="pt-10">
+    </div>
+  </div>
+  <div
+    class="m-auto w-8/12 text-[0.6rem] sm:text-sm font-inter text-slate-500 p-4 mt-12 border-t-slate-700 border-t-[1px] uppercase justify-center flex gap-4">
+    <div>Contact at contact@tarapilbrow.com</div>
+    <div class="w-[20px]"><a href="https://www.facebook.com/tara.pilbrow/"><img src="img/f_logo_RGB-Blue_58.png" alt=""
+          class=""></a></div>
+  </div>
+</body>
+
+</html>

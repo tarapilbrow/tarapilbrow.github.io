@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/mqt7jyl.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600&family=Sofia+Sans+Condensed:wght@600&display=swap"
+        rel="stylesheet">
+    <script src="/node_modules/tw-elements/dist/js/index.min.js"></script>
+</head>
+
+<body>
+    <script>
+        // Burger menus
+        document.addEventListener('DOMContentLoaded', function () {
+          // open
+          const burger = document.querySelectorAll('.tham');
+          const menu = document.querySelectorAll('.navbar-menu');
+          const overlay = document.querySelectorAll('.overlay');
+          const closeMenu = function () {
+            for (var j = 0; j < menu.length; j++) {
+              menu[j].classList.toggle('invisible');
+            }
+          };
+    
+          if (burger.length && menu.length) {
+            for (var i = 0; i < burger.length; i++) {
+              burger[i].addEventListener('click', closeMenu);
+            }
+          }
+    
+          if (overlay.length) {
+            for (var i = 0; i < overlay.length; i++) {
+              overlay[i].addEventListener('click', closeMenu);
+            }
+          }
+        });
+      </script>
+    <div>
+        <nav class="sticky top-0 z-30 bg-opacity-80 bg-white">
+            <div class="relative flex justify-between">
+                <a href="/src/index.html"><img src="img/logo.png" alt="Tara Pilbrow" class="h-10 m-2"></a>
+                <div class="z-50 mr-4 mt-4">
+                    <div class="tham tham-e-squeeze tham-w-6">
+                        <div class="tham-box">
+                            <div class="tham-inner"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="navbar-menu fixed z-50 top-0 left-0 w-screen h-screen invisible">
+            <div
+                class="overlay absolute z-40 w-screen h-screen top-0 right-0 bg-black/30 backdrop-blur-sm backdrop-brightness-150">
+            </div>
+            <div class="absolute z-50 top-0 right-0 w-80 h-screen bg-white text-black p-4 pt-8">
+                <ul class="border-r border-slate-200 text-slate-900">
+                    <li class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline"><a href="about.html">About</a></li>
+                    <li class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline"><a href="projects.html">Projects</a>
+                    </li>
+                    <li class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline"><a href="archive.html">Archive</a>
+                    </li>
+                    <li class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline"><a href="donate.html">Donate</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="z-50 absolute top-4 right-4 tham tham-active tham-e-squeeze tham-w-6">
+                <div class="tham-box">
+                    <div class="tham-inner"></div>
+                </div>
+            </div>
+        </div>
+        <section class="overflow-hidden text-5xl xl:text-8xl font-sofia font-extrabold text-white pt-10">
+            <div class="container mx-auto px-2">
+                <div class="-m-1 flex flex-wrap justify-between md:-m-2">
+                    <div class="flex w-[50%] flex-wrap scale-50 opacity-0 animate-fade-right animate-once animate-duration-[500ms] animate-normal animate-fill-forwards">
+                        <div class="w-full p-1 md:p-2 mb-10">
+                            <a href="Breathe.html" class="relative group block h-full w-full rounded-lg object-cover object-center">
+                                <div class="z-30 absolute top-0 left-0 overflow-hidden w-full h-full">
+                                    <span
+                                        class="absolute w-0 h-full left-0 top-0 bg-white group-hover:w-2 transition-[width] duration-300 ease-in"></span>
+                                    <span
+                                        class="absolute w-0 h-full right-0 top-0 bg-white group-hover:w-2 transition-[width] duration-300 ease-in"></span>
+                                    <span
+                                        class="absolute w-full h-0 left-0 top-0 bg-white group-hover:h-3 transition-[height] duration-300 ease-in"></span>
+                                    <span
+                                        class="absolute w-full h-0 left-0 bottom-0 bg-white group-hover:h-3 transition-[height] duration-300 ease-in"></span>
+                                </div>
+                                <div class="z-10 container bg-black overflow-hidden w-full h-full">
+                                    <div
+                                        class="parallax-child group-hover:-translate-y-3 transition duration-300 ease-in bg-contain bg-center w-full h-full">
+                                        <img src="img/Homepage 3.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div
+                                    class="z-40 absolute top-[33%] left-3 opacity-0 group-hover:opacity-100 transition duration-200 ease-in delay-100 uppercase">
+                                    Breathe<p class="text-3xl">2021/23</p></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex w-[50%] flex-wrap scale-50 opacity-0 animate-fade-left animate-once animate-duration-[500ms] animate-normal animate-fill-forwards">
+                        <div class="w-full p-1 md:p-2 mb-10">
+                            <a href="uplift.html" class="relative group block h-full w-full rounded-lg object-cover object-center">
+                                <div class="z-30 absolute top-0 left-0 overflow-hidden w-full h-full">
+                                    <span
+                                        class="absolute w-0 h-full left-0 top-0 bg-white group-hover:w-2 transition-[width] duration-300 ease-in"></span>
+                                    <span
+                                        class="absolute w-0 h-full right-0 top-0 bg-white group-hover:w-2 transition-[width] duration-300 ease-in"></span>
+                                    <span
+                                        class="absolute w-full h-0 left-0 top-0 bg-white group-hover:h-3 transition-[height] duration-300 ease-in"></span>
+                                    <span
+                                        class="absolute w-full h-0 left-0 bottom-0 bg-white group-hover:h-3 transition-[height] duration-300 ease-in"></span>
+                                </div>
+                                <div class="z-10 container bg-black overflow-hidden w-full h-full">
+                                    <div
+                                        class="parallax-child group-hover:-translate-y-3 transition duration-300 ease-in bg-contain bg-center w-full h-full">
+                                        <img src="img/project 2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div
+                                    class="z-40 absolute top-[33%] left-3 opacity-0 group-hover:opacity-100 transition duration-200 ease-in delay-100 uppercase">
+                                    Uplift<p class="text-3xl">2023</p></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex w-[50%] flex-wrap scale-50 opacity-0 animate-fade-right animate-once animate-duration-[500ms] animate-delay-100 animate-normal animate-fill-forwards">
+                        <div class="w-full p-1 md:p-2 mb-10">
+                            <a href="stopdropdrink.html" class="relative group block h-full w-full rounded-lg object-cover object-center">
+                                <div class="z-30 absolute top-0 left-0 overflow-hidden w-full h-full">
+                                    <span
+                                        class="absolute w-0 h-full left-0 top-0 bg-white group-hover:w-2 transition-[width] duration-300 ease-in"></span>
+                                    <span
+                                        class="absolute w-0 h-full right-0 top-0 bg-white group-hover:w-2 transition-[width] duration-300 ease-in"></span>
+                                    <span
+                                        class="absolute w-full h-0 left-0 top-0 bg-white group-hover:h-3 transition-[height] duration-300 ease-in"></span>
+                                    <span
+                                        class="absolute w-full h-0 left-0 bottom-0 bg-white group-hover:h-3 transition-[height] duration-300 ease-in"></span>
+                                </div>
+                                <div class="z-10 container bg-black overflow-hidden w-full h-full">
+                                    <div
+                                        class="parallax-child group-hover:-translate-y-3 transition duration-300 ease-in bg-contain bg-center w-full h-full">
+                                        <img src="img/project 3.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div
+                                    class="z-40 absolute top-[33%] left-3 opacity-0 group-hover:opacity-100 transition duration-200 ease-in delay-100 uppercase">
+                                    Stop, drop, drink<p class="text-3xl">2019</p></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex w-[50%] flex-wrap scale-50 opacity-0 animate-fade-left animate-once animate-duration-[500ms] animate-delay-100 animate-normal animate-fill-forwards">
+                        <div class="w-full p-1 md:p-2 mb-10">
+                            <a href="twoplusone.html" class="relative group block h-full w-full rounded-lg object-cover object-center">
+                                <div class="z-30 absolute top-0 left-0 overflow-hidden w-full h-full">
+                                    <span
+                                        class="absolute w-0 h-full left-0 top-0 bg-white group-hover:w-2 transition-[width] duration-300 ease-in"></span>
+                                    <span
+                                        class="absolute w-0 h-full right-0 top-0 bg-white group-hover:w-2 transition-[width] duration-300 ease-in"></span>
+                                    <span
+                                        class="absolute w-full h-0 left-0 top-0 bg-white group-hover:h-3 transition-[height] duration-300 ease-in"></span>
+                                    <span
+                                        class="absolute w-full h-0 left-0 bottom-0 bg-white group-hover:h-3 transition-[height] duration-300 ease-in"></span>
+                                </div>
+                                <div class="z-10 container bg-black overflow-hidden w-full h-full">
+                                    <div
+                                        class="parallax-child group-hover:-translate-y-3 transition duration-300 ease-in bg-contain bg-center w-full h-full">
+                                        <img src="img/project 4.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div
+                                    class="z-40 absolute top-[33%] left-3 opacity-0 group-hover:opacity-100 transition duration-200 ease-in delay-100 uppercase">
+                                    2+1<p class="text-3xl">2016-19</p></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="m-auto w-8/12 text-[0.6rem] sm:text-sm font-inter text-slate-500 p-4 mt-12 border-t-slate-700 border-t-[1px] uppercase justify-center flex gap-4">
+        <div>Contact at contact@tarapilbrow.com</div>
+        <div class="w-[20px]"><a href="https://www.facebook.com/tara.pilbrow/"><img src="img/f_logo_RGB-Blue_58.png" alt="" class=""></a></div>
+      </div>
+</body>
+
+</html>
