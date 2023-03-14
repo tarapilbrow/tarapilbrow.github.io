@@ -95,6 +95,8 @@
                     src="https://www.youtube.com/embed/o3mssNea8o4?rel=0&amp;showinfo=0&autoplay=1&loop=0"
                     allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" data-gtm-yt-inspected-2340190_699="true" id="240632615"></iframe>
             </div>
+            <div class="flex flex-row">
+                <div class="flex-auto">
             <div class="pt-6 mx-auto flex flex-col w-3/4 items-stretch">
                 <h1 class="text-4xl font-inter">Waltzing Words</h1>
                 <p class="pt-5 text-xl font-inter font-light text-slate-500 text-center">This solo multimedia work looks at how one person grows and develops within an urban environment. The dancer is cradled by a mass of voices, a barrage of words in which voices become sound rather than sense. At first she appears as a child playing in an adult world, self-absorbed, fascinated as much by her own body as the sounds and sights around her. Then gradually comes the discovery of the other, of sensuality, of her body as a means of communication.
@@ -163,10 +165,28 @@
                         class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
                 </button>
             </div>
-            <div class="pt-20 mx-auto flex flex-row w-11/12 justify-between flex-wrap">
-                <div class="flex-none w-[25rem] sm:w-[40rem] grid grid-rows-5 grid-cols-[30rem, 8fr] gap-2 text-sm sm:text-xl font-inter text-slate-700 pb-10">
-                    <h2 class="col-span-2 flex-none uppercase pb-5 text-lg sm:text-2xl">Credits</h2>
-                    <h2 class="flex-none w-32 whitespace-nowrap">Choreographer / Performer</h2>
+            <div class="pt-20 mx-auto flex flex-col w-11/12">
+
+                <ul class="mb-5 flex list-none flex-wrap pl-0 flex-row" id="pills-tab" role="tablist" data-te-nav-ref>
+                    <li role="presentation">
+                        <a href="#team"
+                            class="my-2 block rounded bg-neutral-100 px-7 pt-2 pb-2 text-xs uppercase leading-tight text-neutral-500 data-[te-nav-active]:!bg-secondary-200 data-[te-nav-active]:text-secondary-900 mr-4 text:sm sm:text-xl font-inter font-thin"
+                            id="team-tab" data-te-toggle="pill" data-te-target="#team" data-te-nav-active role="tab"
+                            aria-controls="team" aria-selected="true">Team</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#performance"
+                            class="my-2 block rounded bg-neutral-100 px-7 pt-2 pb-2 text-xs uppercase leading-tight text-neutral-500 data-[te-nav-active]:!bg-secondary-200 data-[te-nav-active]:text-secondary-900 mr-4 text:sm sm:text-xl font-inter font-thin"
+                            id="performance-tab" data-te-toggle="pill" data-te-target="#performance" role="tab"
+                            aria-controls="performance" aria-selected="false">Performances</a>
+                    </li>
+                </ul>
+                <div class="mb-6">
+                    <div class="hidden opacity-0 opacity-100 transition-opacity duration-800 ease-in-out data-[te-tab-active]:block"
+                        id="team" role="tabpanel" aria-labelledby="team-tab" data-te-tab-active>
+                        <div
+                            class="flex-none w-full grid grid-cols-2 grid-rows-7 gap-2 text:sm sm:text-xl font-inter font-light text-slate-700 pb-10">
+                            <h2 class="flex-none w-32 whitespace-nowrap">Choreographer / Performer</h2>
                     <h2 class="flex-auto">Tara Pilbrow</h2>
                     <h2 class="w-32 pt-3 whitespace-nowrap">Sound design</h2>
                     <h2 class="flex-auto pt-3">Ben Wright</h2>
@@ -174,14 +194,24 @@
                     <h2 class="flex-auto pt-3">Linda Pontoreiro</h2>
                     <h2 class="w-32 pt-3 whitespace-nowrap">Lighting design</h2>
                     <h2 class="flex-auto pt-3">Prema Metha</h2>
-                </div>
-                <div class="flex-none pr-20">
-                    <div class="flex flex-col flex-nowrap text-sm sm:text-xl font-inter font-thin text-slate-500 justify-start tabular-nums">
-                        <h2 class="flex-none uppercase">performance dates</h2>
-                        <h2 class="flex-none pt-4">11/07/2011 Cockpit Theatre, London (work in progress)</h2>
+                        </div>
+                    </div>
+                    <div class="hidden opacity-0 opacity-100 transition-opacity duration-800 ease-in-out data-[te-tab-active]:block"
+                        id="performance" role="tabpanel" aria-labelledby="performance-tab">
+                        <div class="flex-none pr-20">
+                            <div
+                                class="flex flex-col flex-nowrap text-[1rem] sm:text-xl font-inter font-light text-slate-700 justify-start tabular-nums whitespace-nowrap">
+                                <h2 class="flex-none pt-4">11/07/2011 Cockpit Theatre, London (work in progress)</h2>
                         <h2 class="flex-none pt-1">15/02/2012 Resolutions, The Place, London</h2>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+            </div>
+            <div class="flex-none w-10 h-full text-md font-inter text-slate-500 uppercase"><a href="archive.html"
+                class="block rotate-90 pl-10 underline underline-offset-4 hover:underline-offset-8 whitespace-nowrap">
+                Other Archived Projects</a></div>
             </div>
         </div>
     </div>

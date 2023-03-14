@@ -22,7 +22,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600&family=Sofia+Sans+Condensed:wght@600&display=swap"
         rel="stylesheet">
-
+    <script src="/dist/index.min.js"></script>
 </head>
 
 <body>
@@ -121,30 +121,54 @@
                             18 months, and also recognize the importance of breath, and of the physical body, as a
                             vessel for healing and resilience.” </p>
                     </div>
-                    <div class="w-11/12 pt-20 mx-auto flex flex-row justify-between flex-wrap">
-                        <div
-                            class="flex-none w-20rem sm:w-[30rem] grid grid-rows-7 sm:grid-cols-[30rem, 6fr] sm:grid-cols-[30rem, 8fr] gap-2 text:sm sm:text-xl font-inter text-slate-700 pb-10">
-                            <h2 class="row-span-3 flex-none w-32">Performers</h2>
-                            <h2 class="flex-auto">Julie Crothers</h2>
-                            <h2 class="flex-auto">Colin Epstein</h2>
-                            <h2 class="flex-auto">Hannah Westbrook</h2>
-                            <h2 class="row-span-4 w-32 pt-3">Voicework</h2>
-                            <h2 class="flex-auto pt-3">Amos White</h2>
-                            <h2 class="flex-auto">Mark Farrell</h2>
-                            <h2 class="flex-auto">Katina Letheule</h2>
-                            <h2 class="flex-auto">Jeff Raz</h2>
-                            <h2 class="flex-none w-32 pt-3">Sound tech</h2>
-                            <h2 class="flex-auto pt-3 ">Tanoa Stewart <br />(Atown Agency)</h2>
-                            <h2 class="flex-none w-32 pt-3">Dramaturg</h2>
-                            <h2 class="flex-auto pt-3">Jeff Raz</h2>
-                            <h2 class="col-span-2  pt-3">Choreographed and directed by Tara Pilbrow</h2>
-                        </div>
-                        <div class="flex-none pr-20">
-                            <div
-                                class="flex flex-col flex-nowrap text:sm sm:text-xl font-inter font-thin text-slate-500 justify-start tabular-nums">
-                                <h2 class="flex-none uppercase">performance dates</h2>
-                                <h2 class="flex-none pt-4">07/08/2021 The Healing Garden, Alameda</h2>
-                                <h2 class="flex-none pt-1">07/09/2021 The Healing Garden, Alameda</h2>
+                    <div class="w-10/12 mt-20 mx-auto flex flex-col">
+                        <ul class="mb-5 flex list-none flex-wrap pl-0 flex-row" id="pills-tab" role="tablist"
+                            data-te-nav-ref>
+                            <li role="presentation">
+                                <a href="#breathe-team"
+                                    class="my-2 block rounded bg-neutral-100 px-7 pt-2 pb-2 text-xs uppercase leading-tight text-neutral-500 data-[te-nav-active]:!bg-secondary-200 data-[te-nav-active]:text-secondary-900 mr-4 text:sm sm:text-xl font-inter font-thin"
+                                    id="breathe-team-tab" data-te-toggle="pill" data-te-target="#breathe-team"
+                                    data-te-nav-active role="tab" aria-controls="breathe-team"
+                                    aria-selected="true">Team</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#breathe-performances"
+                                    class="my-2 block rounded bg-neutral-100 px-7 pt-2 pb-2 text-xs uppercase leading-tight text-neutral-500 data-[te-nav-active]:!bg-secondary-200 data-[te-nav-active]:text-secondary-900 mr-4 text:sm sm:text-xl font-inter font-thin"
+                                    id="breathe-performances-tab" data-te-toggle="pill"
+                                    data-te-target="#breathe-performances" role="tab"
+                                    aria-controls="breathe-performances" aria-selected="false">Performances</a>
+                            </li>
+                        </ul>
+                        <div class="mb-6">
+                            <div class="hidden opacity-0 opacity-100 transition-opacity duration-800 ease-in-out data-[te-tab-active]:block"
+                                id="breathe-team" role="tabpanel" aria-labelledby="breathe-team-tab" data-te-tab-active>
+                                <div
+                                    class="flex-none w-full grid grid-cols-2 grid-rows-7 gap-2 text:sm sm:text-xl font-inter font-light text-slate-700 pb-10">
+                                    <h2 class="row-span-3 flex-none w-32">Performers</h2>
+                                    <h2 class="flex-auto">Julie Crothers</h2>
+                                    <h2 class="flex-auto">Colin Epstein</h2>
+                                    <h2 class="flex-auto">Hannah Westbrook</h2>
+                                    <h2 class="row-span-4 w-32 pt-3">Voicework</h2>
+                                    <h2 class="flex-auto pt-3">Amos White</h2>
+                                    <h2 class="flex-auto">Mark Farrell</h2>
+                                    <h2 class="flex-auto">Katina Letheule</h2>
+                                    <h2 class="flex-auto">Jeff Raz</h2>
+                                    <h2 class="flex-none w-32 pt-3">Sound tech</h2>
+                                    <h2 class="flex-auto pt-3 ">Tanoa Stewart <br />(Atown Agency)</h2>
+                                    <h2 class="flex-none w-32 pt-3">Dramaturg</h2>
+                                    <h2 class="flex-auto pt-3">Jeff Raz</h2>
+                                    <h2 class="col-span-2  pt-3">Choreographed and directed by Tara Pilbrow</h2>
+                                </div>
+                            </div>
+                            <div class="hidden opacity-0 opacity-100 transition-opacity duration-800 ease-in-out data-[te-tab-active]:block"
+                                id="breathe-performances" role="tabpanel" aria-labelledby="breathe-performances-tab">
+                                <div class="flex-none pr-20">
+                                    <div
+                                        class="flex flex-col flex-nowrap text-[1rem] sm:text-xl font-inter font-light text-slate-700 justify-start tabular-nums whitespace-nowrap">
+                                        <h2 class="flex-none pt-4">07/08/2021 The Healing Garden, Alameda</h2>
+                                        <h2 class="flex-none pt-1">07/09/2021 The Healing Garden, Alameda</h2>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

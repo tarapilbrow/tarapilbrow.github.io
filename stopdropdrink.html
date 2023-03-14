@@ -22,7 +22,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600&family=Sofia+Sans+Condensed:wght@600&display=swap"
         rel="stylesheet">
-        <script src="/dist/index.min.js"></script>
+    <script src="/dist/index.min.js"></script>
 </head>
 
 <body>
@@ -138,23 +138,19 @@
                             class="relative w-full max-w-4xl m-auto overflow-hidden after:clear-both after:block after:content-['']">
                             <div class="relative float-left -mr-[100%] w-full max-w-4xl m-auto !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
                                 data-te-carousel-fade data-te-carousel-item data-te-carousel-active>
-                                <img src="img/SDD 4.jpg" class="block w-full max-w-4xl m-auto"
-                                    alt="Wild Landscape" />
+                                <img src="img/SDD 4.jpg" class="block w-full max-w-4xl m-auto" alt="Wild Landscape" />
                             </div>
                             <div class="relative float-left -mr-[100%] hidden w-full max-w-4xl m-auto !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
                                 data-te-carousel-fade data-te-carousel-item>
-                                <img src="img/SDD 2.jpg"
-                                    class="block w-full max-w-4xl m-auto" alt="Camera" />
+                                <img src="img/SDD 2.jpg" class="block w-full max-w-4xl m-auto" alt="Camera" />
                             </div>
                             <div class="relative float-left -mr-[100%] hidden w-full max-w-4xl m-auto !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
                                 data-te-carousel-fade data-te-carousel-item>
-                                <img src="img/SDD 3.jpg"
-                                    class="block w-full max-w-4xl m-auto" alt="Exotic Fruits" />
+                                <img src="img/SDD 3.jpg" class="block w-full max-w-4xl m-auto" alt="Exotic Fruits" />
                             </div>
                             <div class="relative float-left -mr-[100%] hidden w-full max-w-4xl m-auto !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
                                 data-te-carousel-fade data-te-carousel-item>
-                                <img src="img/SDD 1.jpg"
-                                    class="block w-full max-w-4xl m-auto" alt="Exotic Fruits" />
+                                <img src="img/SDD 1.jpg" class="block w-full max-w-4xl m-auto" alt="Exotic Fruits" />
                             </div>
                         </div>
                         <button
@@ -184,38 +180,61 @@
                                 class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
                         </button>
                     </div>
-                    <div class="pt-20 mx-auto flex flex-row w-11/12 justify-between flex-wrap">
-                        <div
-                            class="flex-none w-[25rem] grid grid-rows-15 grid-cols-[30rem, 8fr] gap-2 text:sm sm:text-xl font-inter text-slate-700 pb-10">
-                            <h2 class="col-span-2 flex-none uppercase pb-5 text-lg sm:text-2xl">Credits</h2>
-                            <h2 class="flex-none w-32 pt-4">Director/Choreographer</h2>
-                            <h2 class="flex-auto pt-4">Tara Pilbrow</h2>
-                            <h2 class="flex-none w-32 pt-4">Sound Design</h2>
-                            <h2 class="flex-auto pt-4">Heather Love</h2>
-                            <h2 class="flex-none w-32 pt-4">Lighting</h2>
-                            <h2 class="flex-auto pt-4">Maxx Kurzunski</h2>
-                            <h2 class="row-span-6 flex-none w-32 pt-4">Performers</h2>
-                            <h2 class="flex-auto pt-4">Julie Crothers</h2>
-                            <h2 class="flex-auto">Colin Epstein</h2>
-                            <h2 class="flex-auto">Tara Pilbrow</h2>
-                            <h2 class="flex-auto">Becky <br />Robinson-Leviton</h2>
-                            <h2 class="flex-auto">Hannah <br /> Westbrook</h2>
-                            <h2 class="flex-auto">Heather Love</h2>
-                            <h2 class="flex-none w-32"></h2>
-                            <h2 class="flex-auto">Jeff Raz</h2>
-                            <h2 class="flex-none w-32 pt-4">Photography/Film</h2>
-                            <h2 class="flex-auto pt-4">Maurice Ramirez</h2>
-                        </div>
-                        <div class="flex-none pr-20">
-                            <div
-                                class="flex flex-col flex-nowrap text-sm sm:text-xl font-inter font-thin text-slate-500 justify-start tabular-nums">
-                                <h2 class="flex-none uppercase">performance dates</h2>
-                                <h2 class="flex-none pt-4">09/28/2019 The Fireside Lounge, Alameda</h2>
-                                <h2 class="flex-none pt-1">10/05/2019 The Fireside Lounge, Alameda</h2>
-                                <h2 class="flex-none pt-1">10/12/2019 The Fireside Lounge, Alameda</h2>
-                                <h2 class="flex-none pt-1">10/13/2019 The Fireside Lounge, Alameda</h2>
+                    <div class="pt-20 mx-auto flex flex-col w-11/12">
+
+                        <ul class="mb-5 flex list-none flex-wrap pl-0 flex-row" id="pills-tab" role="tablist"
+                            data-te-nav-ref>
+                            <li role="presentation">
+                                <a href="#team"
+                                    class="my-2 block rounded bg-neutral-100 px-7 pt-2 pb-2 text-xs uppercase leading-tight text-neutral-500 data-[te-nav-active]:!bg-secondary-200 data-[te-nav-active]:text-secondary-900 mr-4 text:sm sm:text-xl font-inter font-thin"
+                                    id="team-tab" data-te-toggle="pill" data-te-target="#team" data-te-nav-active
+                                    role="tab" aria-controls="team" aria-selected="true">Team</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#performances"
+                                    class="my-2 block rounded bg-neutral-100 px-7 pt-2 pb-2 text-xs uppercase leading-tight text-neutral-500 data-[te-nav-active]:!bg-secondary-200 data-[te-nav-active]:text-secondary-900 mr-4 text:sm sm:text-xl font-inter font-thin"
+                                    id="performances-tab" data-te-toggle="pill" data-te-target="#performances"
+                                    role="tab" aria-controls="performances" aria-selected="false">Performances</a>
+                            </li>
+                        </ul>
+                        <div class="mb-6">
+                            <div class="hidden opacity-0 opacity-100 transition-opacity duration-800 ease-in-out data-[te-tab-active]:block"
+                                id="team" role="tabpanel" aria-labelledby="team-tab" data-te-tab-active>
+                                <div
+                                    class="flex-none w-full grid grid-cols-2 gap-2 text:sm sm:text-xl font-inter font-light text-slate-700 pb-10">
+                                    <h2 class="flex-none w-32 pt-4">Director/Choreographer</h2>
+                                    <h2 class="flex-auto pt-4">Tara Pilbrow</h2>
+                                    <h2 class="flex-none w-32 pt-4">Sound Design</h2>
+                                    <h2 class="flex-auto pt-4">Heather Love</h2>
+                                    <h2 class="flex-none w-32 pt-4">Lighting</h2>
+                                    <h2 class="flex-auto pt-4">Maxx Kurzunski</h2>
+                                    <h2 class="row-span-6 flex-none w-32 pt-4">Performers</h2>
+                                    <h2 class="flex-auto pt-4">Julie Crothers</h2>
+                                    <h2 class="flex-auto">Colin Epstein</h2>
+                                    <h2 class="flex-auto">Tara Pilbrow</h2>
+                                    <h2 class="flex-auto">Becky <br />Robinson-Leviton</h2>
+                                    <h2 class="flex-auto">Hannah <br /> Westbrook</h2>
+                                    <h2 class="flex-auto">Heather Love</h2>
+                                    <h2 class="flex-none w-32"></h2>
+                                    <h2 class="flex-auto">Jeff Raz</h2>
+                                    <h2 class="flex-none w-32 pt-4">Photography/Film</h2>
+                                    <h2 class="flex-auto pt-4">Maurice Ramirez</h2>
+                                </div>
+                            </div>
+                            <div class="hidden opacity-0 opacity-100 transition-opacity duration-800 ease-in-out data-[te-tab-active]:block"
+                                id="performances" role="tabpanel" aria-labelledby="performances-tab">
+                                <div class="flex-none pr-20">
+                                    <div
+                                        class="flex flex-col flex-nowrap text-[1rem] sm:text-xl font-inter font-light text-slate-700 justify-start tabular-nums whitespace-nowrap">
+                                        <h2 class="flex-none pt-4">09/28/2019 The Fireside Lounge, Alameda</h2>
+                                        <h2 class="flex-none pt-1">10/05/2019 The Fireside Lounge, Alameda</h2>
+                                        <h2 class="flex-none pt-1">10/12/2019 The Fireside Lounge, Alameda</h2>
+                                        <h2 class="flex-none pt-1">10/13/2019 The Fireside Lounge, Alameda</h2>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
                     </div>
                     <div class="mx-auto w-3/4 pb-10">
                         <p class="pt-5 text-lg font-inter font-light text-slate-500 text-center">Supported by:</p>

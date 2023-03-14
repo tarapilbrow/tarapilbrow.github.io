@@ -22,36 +22,36 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600&family=Sofia+Sans+Condensed:wght@600&display=swap"
         rel="stylesheet">
-        <script src="/dist/index.min.js"></script>
+    <script src="/dist/index.min.js"></script>
 </head>
 
 <body>
     <script>
         // Burger menus
         document.addEventListener('DOMContentLoaded', function () {
-          // open
-          const burger = document.querySelectorAll('.tham');
-          const menu = document.querySelectorAll('.navbar-menu');
-          const overlay = document.querySelectorAll('.overlay');
-          const closeMenu = function () {
-            for (var j = 0; j < menu.length; j++) {
-              menu[j].classList.toggle('invisible');
+            // open
+            const burger = document.querySelectorAll('.tham');
+            const menu = document.querySelectorAll('.navbar-menu');
+            const overlay = document.querySelectorAll('.overlay');
+            const closeMenu = function () {
+                for (var j = 0; j < menu.length; j++) {
+                    menu[j].classList.toggle('invisible');
+                }
+            };
+
+            if (burger.length && menu.length) {
+                for (var i = 0; i < burger.length; i++) {
+                    burger[i].addEventListener('click', closeMenu);
+                }
             }
-          };
-    
-          if (burger.length && menu.length) {
-            for (var i = 0; i < burger.length; i++) {
-              burger[i].addEventListener('click', closeMenu);
+
+            if (overlay.length) {
+                for (var i = 0; i < overlay.length; i++) {
+                    overlay[i].addEventListener('click', closeMenu);
+                }
             }
-          }
-    
-          if (overlay.length) {
-            for (var i = 0; i < overlay.length; i++) {
-              overlay[i].addEventListener('click', closeMenu);
-            }
-          }
         });
-      </script>
+    </script>
     <div>
         <nav class="sticky top-0 z-30 bg-opacity-80 bg-white">
             <div class="relative flex justify-between">
@@ -71,13 +71,21 @@
             </div>
             <div class="absolute z-50 top-0 right-0 w-80 h-screen bg-white text-black p-4 pt-8">
                 <ul class="border-r border-slate-200 text-slate-900">
-                    <li class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline"><a href="about.html">About</a></li>
-                    <li class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline"><a
-                            href="projects.html">Projects</a>
+                    <li
+                        class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline">
+                        <a href="about.html">About</a>
                     </li>
-                    <li class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline"><a href="archive.html">Archive</a>
+                    <li
+                        class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline">
+                        <a href="projects.html">Projects</a>
                     </li>
-                    <li class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline"><a href="donate.html">Donate</a>
+                    <li
+                        class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline">
+                        <a href="archive.html">Archive</a>
+                    </li>
+                    <li
+                        class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline">
+                        <a href="donate.html">Donate</a>
                     </li>
                 </ul>
             </div>
@@ -88,8 +96,8 @@
             </div>
         </div>
         <div class="">
-            <div class="text-sm font-inter text-slate-500 uppercase my-4 ml-4"><a href="archive.html">&lt;- Archive</a></div>
-            <div id="carouselExampleCrossfade" class="relative max-w-4xl m-auto" data-te-carousel-init data-te-carousel-slide>
+            <div id="carouselExampleCrossfade" class="relative max-w-4xl m-auto" data-te-carousel-init
+                data-te-carousel-slide>
                 <div class="absolute inset-x-0 bottom-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
                     data-te-carousel-indicators>
                     <button type="button" data-te-target="#carouselExampleCrossfade" data-te-slide-to="0"
@@ -103,10 +111,12 @@
                         class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
                         aria-label="Slide 3"></button>
                 </div>
-                <div class="relative w-full max-w-4xl m-auto overflow-hidden after:clear-both after:block after:content-['']">
+                <div
+                    class="relative w-full max-w-4xl m-auto overflow-hidden after:clear-both after:block after:content-['']">
                     <div class="relative float-left -mr-[100%] w-full max-w-4xl m-auto !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
                         data-te-carousel-fade data-te-carousel-item data-te-carousel-active>
-                        <img src="img/past-infanla-photo-1.png" class="block w-full max-w-4xl m-auto" alt="Wild Landscape" />
+                        <img src="img/past-infanla-photo-1.png" class="block w-full max-w-4xl m-auto"
+                            alt="Wild Landscape" />
                     </div>
                     <div class="relative float-left -mr-[100%] hidden w-full max-w-4xl m-auto !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
                         data-te-carousel-fade data-te-carousel-item>
@@ -114,7 +124,8 @@
                     </div>
                     <div class="relative float-left -mr-[100%] hidden w-full max-w-4xl m-auto !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
                         data-te-carousel-fade data-te-carousel-item>
-                        <img src="img/past-infanla-photo-3.png" class="block w-full max-w-4xl m-auto" alt="Exotic Fruits" />
+                        <img src="img/past-infanla-photo-3.png" class="block w-full max-w-4xl m-auto"
+                            alt="Exotic Fruits" />
                     </div>
                 </div>
                 <button
@@ -142,39 +153,78 @@
                         class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
                 </button>
             </div>
-            <div class="py-12 mx-auto flex flex-col w-3/4 items-stretch">
-                <h1 class="text-4xl font-inter">Infala</h1>
-                <p class="pt-5 text-xl font-inter font-light text-slate-500 text-center">This collaboration with Nigerian musician Sola Akingbola focuses on rhythm, the idea of two musicians and two dancers as a percussive and melodic ensemble. Both musicians and dancers work with short musical phrases, building, contrasting, and combining different rhythms, as each of the four artists contributes to the composition of the whole.<br><br>This work was commissioned by Transtango for the Dreaming Cities project.
-                </p>
-            </div>
-            <div class="pt-20 mx-auto flex flex-row w-11/12 justify-between flex-wrap">
-                <div
-                    class="flex-none w-[25rem] sm:w-[40rem] grid grid-rows-3 grid-cols-[30rem, 8fr] gap-2 text-sm sm:text-xl font-inter text-slate-700 pb-10">
-                    <h2 class="col-span-2 flex-none uppercase pb-5 text-lg sm:text-2xl">Credits</h2>
-                    <h2 class="flex-none w-32 whitespace-nowrap pt-3">Choreographer</h2>
-                    <h2 class="flex-auto pt-3">Tara Pilbrow</h2>
-                    <h2 class="w-32 pt-3 whitespace-nowrap">Composer</h2>
-                    <h2 class="flex-auto pt-3">Sola Akingbola</h2>
-                    <h2 class="row-span-2 w-32 pt-3 whitespace-nowrap">Performers</h2>
-                    <h2 class="flex-auto pt-3">Amir Giles</h2>
-                    <h2 class="flex-auto">Tara Pilbrow</h2>
-                    <h2 class="w-32 pt-3 whitespace-nowrap">Producer</h2>
-                    <h2 class="flex-auto pt-3">Patricia Bossio</h2>
-                </div>
-                <div class="flex-none pr-20">
-                    <div
-                        class="flex flex-col flex-nowrap text-sm sm:text-xl font-inter font-thin text-slate-500 justify-start tabular-nums">
-                        <h2 class="flex-none uppercase">performance dates</h2>
-                        <h2 class="flex-none pt-4">04/02/2011 King’s Place, London</h2>
+            <div class="flex flex-row">
+                <div class="flex-auto">
+                    <div class="py-12 mx-auto flex flex-col w-3/4 items-stretch">
+                        <h1 class="text-4xl font-inter">Infala</h1>
+                        <p class="pt-5 text-xl font-inter font-light text-slate-500 text-center">This collaboration with
+                            Nigerian musician Sola Akingbola focuses on rhythm, the idea of two musicians and two
+                            dancers as a
+                            percussive and melodic ensemble. Both musicians and dancers work with short musical phrases,
+                            building, contrasting, and combining different rhythms, as each of the four artists
+                            contributes to
+                            the composition of the whole.<br><br>This work was commissioned by Transtango for the
+                            Dreaming
+                            Cities project.
+                        </p>
+                    </div>
+                    <div class="pt-20 mx-auto flex flex-col w-11/12">
+
+                        <ul class="mb-5 flex list-none flex-wrap pl-0 flex-row" id="pills-tab" role="tablist"
+                            data-te-nav-ref>
+                            <li role="presentation">
+                                <a href="#team"
+                                    class="my-2 block rounded bg-neutral-100 px-7 pt-2 pb-2 text-xs uppercase leading-tight text-neutral-500 data-[te-nav-active]:!bg-secondary-200 data-[te-nav-active]:text-secondary-900 mr-4 text:sm sm:text-xl font-inter font-thin"
+                                    id="team-tab" data-te-toggle="pill" data-te-target="#team" data-te-nav-active
+                                    role="tab" aria-controls="team" aria-selected="true">Team</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#performance"
+                                    class="my-2 block rounded bg-neutral-100 px-7 pt-2 pb-2 text-xs uppercase leading-tight text-neutral-500 data-[te-nav-active]:!bg-secondary-200 data-[te-nav-active]:text-secondary-900 mr-4 text:sm sm:text-xl font-inter font-thin"
+                                    id="performance-tab" data-te-toggle="pill" data-te-target="#performance" role="tab"
+                                    aria-controls="performance" aria-selected="false">Performances</a>
+                            </li>
+                        </ul>
+                        <div class="mb-6">
+                            <div class="hidden opacity-0 opacity-100 transition-opacity duration-800 ease-in-out data-[te-tab-active]:block"
+                                id="team" role="tabpanel" aria-labelledby="team-tab" data-te-tab-active>
+                                <div
+                                    class="flex-none w-full grid grid-cols-2 grid-rows-7 gap-2 text:sm sm:text-xl font-inter font-light text-slate-700 pb-10">
+                                    <h2 class="flex-none w-32 whitespace-nowrap pt-3">Choreographer</h2>
+                                    <h2 class="flex-auto pt-3">Tara Pilbrow</h2>
+                                    <h2 class="w-32 pt-3 whitespace-nowrap">Composer</h2>
+                                    <h2 class="flex-auto pt-3">Sola Akingbola</h2>
+                                    <h2 class="row-span-2 w-32 pt-3 whitespace-nowrap">Performers</h2>
+                                    <h2 class="flex-auto pt-3">Amir Giles</h2>
+                                    <h2 class="flex-auto">Tara Pilbrow</h2>
+                                    <h2 class="w-32 pt-3 whitespace-nowrap">Producer</h2>
+                                    <h2 class="flex-auto pt-3">Patricia Bossio</h2>
+                                </div>
+                            </div>
+                            <div class="hidden opacity-0 opacity-100 transition-opacity duration-800 ease-in-out data-[te-tab-active]:block"
+                                id="performance" role="tabpanel" aria-labelledby="performance-tab">
+                                <div class="flex-none pr-20">
+                                    <div
+                                        class="flex flex-col flex-nowrap text-[1rem] sm:text-xl font-inter font-light text-slate-700 justify-start tabular-nums whitespace-nowrap">
+                                        <h2 class="flex-none pt-4">04/02/2011 King’s Place, London</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="flex-none w-10 h-full text-md font-inter text-slate-500 uppercase"><a href="archive.html"
+                        class="block rotate-90 pl-10 underline underline-offset-4 hover:underline-offset-8 whitespace-nowrap">
+                        Other Archived Projects</a></div>
             </div>
         </div>
     </div>
-    <div class="m-auto w-8/12 text-[0.6rem] sm:text-sm font-inter text-slate-500 p-4 mt-12 border-t-slate-700 border-t-[1px] uppercase justify-center flex gap-4">
+    <div
+        class="m-auto w-8/12 text-[0.6rem] sm:text-sm font-inter text-slate-500 p-4 mt-12 border-t-slate-700 border-t-[1px] uppercase justify-center flex gap-4">
         <div>Contact at contact@tarapilbrow.com</div>
-        <div class="w-[20px]"><a href="https://www.facebook.com/tara.pilbrow/"><img src="img/f_logo_RGB-Blue_58.png" alt="" class=""></a></div>
-      </div>
+        <div class="w-[20px]"><a href="https://www.facebook.com/tara.pilbrow/"><img src="img/f_logo_RGB-Blue_58.png"
+                    alt="" class=""></a></div>
+    </div>
 </body>
 
 </html>
