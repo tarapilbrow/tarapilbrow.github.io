@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9M07KTMJ6S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-9M07KTMJ6S');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/mqt7jyl.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600&family=Sofia+Sans+Condensed:wght@600&display=swap"
+    rel="stylesheet">
+  <script defer src="https://unpkg.com/tailwindcss-intersect@1.x.x/dist/observer.min.js"></script>
+</head>
+
+<body>
+  <script>
+    // Burger menus
+    document.addEventListener('DOMContentLoaded', function () {
+      // open
+      const burger = document.querySelectorAll('.tham');
+      const menu = document.querySelectorAll('.navbar-menu');
+      const overlay = document.querySelectorAll('.overlay');
+      const closeMenu = function () {
+        for (var j = 0; j < menu.length; j++) {
+          menu[j].classList.toggle('invisible');
+        }
+      };
+
+      if (burger.length && menu.length) {
+        for (var i = 0; i < burger.length; i++) {
+          burger[i].addEventListener('click', closeMenu);
+        }
+      }
+
+      if (overlay.length) {
+        for (var i = 0; i < overlay.length; i++) {
+          overlay[i].addEventListener('click', closeMenu);
+        }
+      }
+    });
+  </script>
+  <div>
+    <nav class="sticky top-0 z-30 bg-opacity-80 bg-white">
+      <div class="relative flex justify-between">
+        <a href="index.html"><img src="img/logo.png" alt="Tara Pilbrow" class="h-10 m-2"></a>
+        <div class="z-50 mr-4 mt-4">
+          <div class="tham tham-e-squeeze tham-w-6">
+            <div class="tham-box">
+              <div class="tham-inner"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="navbar-menu fixed z-50 top-0 left-0 w-screen h-screen invisible">
+      <div
+        class="overlay absolute z-40 w-screen h-screen top-0 right-0 bg-black/30 backdrop-blur-md backdrop-brightness-150">
+      </div>
+      <div class="absolute z-50 top-0 right-0 w-80 h-screen bg-white text-black p-4 pt-8">
+        <ul class="border-r border-slate-200 text-slate-900">
+          <li
+            class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline uppercase">
+            <a href="about.html">About</a>
+          </li>
+          <li
+            class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline uppercase">
+            <a href="projects.html">Projects</a>
+          </li>
+          <li
+            class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline uppercase">
+            <a href="archive.html">Archive</a>
+          </li>
+          <li
+            class="mt-8 grid justify-end border-r pr-4 border-transparent hover:border-slate-400 no-underline hover:underline uppercase">
+            <a href="donate.html">Donate</a>
+          </li>
+        </ul>
+      </div>
+      <div class="z-50 absolute top-4 right-4 tham tham-active tham-e-squeeze tham-w-6">
+        <div class="tham-box">
+          <div class="tham-inner"></div>
+        </div>
+      </div>
+    </div>
+    <div class="pb-12">
+      <div class="flex flex-col justify-center mx-auto w-[380px] sm:w-[640px] lg:w-[768px] xl:w-[1024px] 2xl:w-[1280px]">
+        <div
+          class="flex-none w-full mx-auto relative bg-white overflow-hidden flex items-center justify-center h-[180px] sm:h-[180px] lg:h-[200px] xl:h-[300px]">
+          <div
+            class="absolute w-full flex items-center justify-center font-nobel flex-none z-10 text-[6rem] sm:text-[10rem] lg:text-[12.3rem] xl:text-[16.4rem] 2xl:text-[20.6rem] uppercase bg-white font-extrabold text-grayDance-100 h-[200px]">
+            Dance
+          </div>          
+          <div
+            class="absolute w-full h-full flex items-center justify-start font-nobel tracking-[0.12em] lg:tracking-[0.13em] 2xl:tracking-[0.15em] z-20 text-[3rem] sm:text-[5rem] lg:text-[5.8rem] xl:text-[7.7rem] 2xl:text-[9.5rem] uppercase font-light text-gray-800]">
+            <div class=" -mt-[15px] sm:-mt-[35px] lg:-mt-[43px] xl:-mt-[60px] 2xl:-mt-[70px]">
+              Tara</div>
+          </div>
+          <div
+            class="absolute w-full h-full flex items-center justify-end font-nobel tracking-[0.2em] lg:tracking-[0.195em] xl:tracking-[0.20em] 2xl:tracking-[0.24em] z-20 text-[3rem] sm:text-[5rem] lg:text-[5.8rem] xl:text-[7.7rem] 2xl:text-[9.5rem] uppercase font-light text-grayDance-80">
+            <div
+              class="-mr-[15px] 2xl:-mr-[30px] -mb-[50px] sm:-mb-[85px] lg:-mb-[88px] xl:-mb-[120px] 2xl:-mb-[150px]">
+              Pilbrow</div>
+          </div>
+        </div>
+      </div>
+      <!-- opacity-0 animate-fade-up animate-once animate-duration-[500ms] animate-delay-500 animate-normal animate-fill-forwards -->
+      <div
+        class="pt-10 w-11/12 lg:w-9/12 2xl:w-7/12 mx-auto">
+        <div class="mx-auto flex gap-6 ">
+          <div class="hidden flex-none relative overflow-hidden w-[300px] mx-auto sm:flex items-center">
+            <video autoplay loop muted playsinline class="flex-none object-cover h-full z-0 my-auto">
+              <source src="video/BreatheClipLong.mp4" type="video/mp4" />
+            </video>
+            <div
+              class="font-nobel absolute mx-auto flex-none z-10 h-full w-[300px] grid items-center justify-end uppercase font-extrabold opacity-0 animate-fade-up animate-once animate-duration-[500ms] animate-delay-500 animate-normal animate-fill-forwards"
+              style="background:linear-gradient(to top, rgba(255,255,255,1), rgba(255,255,255,0) 40%); mix-blend-mode: lighten;">
+              <span class="absolute bottom-0 right-0 mb-12 -mr-9 -rotate-90 text-[2rem]"
+                style="line-height: 100%;">Tara<br>Pilbrow</span>
+            </div>
+          </div>
+
+          <div class="grow text-xl font-inter font-light text-slate-500">
+            Alameda-based dance company Tara Pilbrow Dance is auditioning for two dancers to join the company for the remake of <a class="text-blue-500 underline" href="Breathe.html">Breathe</a>, a piece first created in 2021 for 3 dancers.<br><br>
+            Dancers should have a strong contemporary dance background, confident contact/ partnering skills, and be comfortable with improvisation and movement composition.<br><br>
+            Performances of Breathe are planned for May 5/6 2024 at the Radium Runway outdoor performance venue in Alameda. Rehearsals will take place in Alameda 2-3 times per week between March and May - schedule to be confirmed with dancers.
+            <br><br>
+            Tara Pilbrow Dance is able to pay dancers as independent contractors, at $25/hr for rehearsals.<br><br>
+            <span class="text-black">
+                <span class="font-bold">DAY:</span> Friday, January 19th<br><br>
+                <span class="font-bold">TIME:</span> 10am - 1pm<br><br>
+                <span class="font-bold">LOCATION:</span> Rhythmix Cultural Works, 2513 Blanding Avenue, Alameda.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-full p-10 bg-yellow-200">
+    <div class="flex flex-col justify-center mx-auto w-[380px] sm:w-[640px] lg:w-[768px] xl:w-[1024px] 2xl:w-[1280px] text-[2rem]">
+        To be considered for the audition please send the following materials to contact@tarapilbrow.com <br><br>
+        Intro letter, CV, and a short dance reel.<br><br>
+        Materials are due January 5th, 2023 at 5pm<br><br>
+        Applicants will be notified by Wednesday January 10th, 2023
+    </div>
+  </div>
+  <div
+    class="m-auto w-8/12 text-[0.6rem] sm:text-sm font-inter text-slate-500 p-4 mt-12 border-t-slate-700 border-t-[1px] uppercase justify-center flex gap-4">
+    <div>Contact at contact@tarapilbrow.com</div>
+    <div class="w-[20px]"><a href="https://www.facebook.com/tara.pilbrow/"><img src="img/f_logo_RGB-Blue_58.png" alt=""
+          class=""></a></div>
+  </div>
+</body>
+
+</html>
